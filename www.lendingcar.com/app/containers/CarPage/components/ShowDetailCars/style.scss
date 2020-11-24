@@ -1,0 +1,57 @@
+@import '~scss_vars';
+
+.carimg-mobile {
+  .carimg-dynamic {
+    width: 100%;
+  }
+}
+.carimg-detail{
+  .carimg-static-div {
+    width: 65%;
+    overflow: hidden;
+  }
+  .carimg-static {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+  }
+  .show-inline {
+    display: inline-flex;
+  }
+  .carimg-dynamic-div {
+    width: 30%;
+    text-align: center;
+    padding: 30px 10px;
+  }
+  .carimg-dynamic {
+    width: 100%;
+    height: 200px;
+  }
+  .img-div {
+    height: 200px;
+    // width: 320px;
+    padding: 0;
+  }
+  .slick-slider {
+    height: auto;
+    display: inline;
+  }
+  .slick-list {
+    margin: auto;
+    text-align: center;
+  }
+  .slick-prev {
+    top: -20px;
+  }
+  .slick-prev, .slick-next {
+    left: -10px;
+    transform:rotate(90deg);
+    -ms-transform:rotate(90deg); 	/* IE 9 */
+    -moz-transform:rotate(90deg); 	/* Firefox */
+    -webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+    -o-transform:rotate(90deg); 	/* Opera */
+  }
+  .slick-next:before, .slick-prev:before {
+    color: $text-gray;
+  }
+}

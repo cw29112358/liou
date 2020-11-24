@@ -1,0 +1,270 @@
+@import '~scss_vars';
+
+.about-us-container {
+  position: relative;
+  .btn-primary {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 100%;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 19px;
+    background-color: #00c8cc;
+  }
+  width: 100%;
+   h1, h2, h4, p{
+   }
+  img{
+    width: 100%;
+  }
+  .row textarea{
+    height: 200px;
+    resize: none;
+  }
+  .about-us-row{
+    margin-right: 0;
+  }
+  .about-us-introduce{
+    background: $background-black;
+    &>div{
+      position: absolute;
+      top:5%;
+      left:50%;
+      margin-left: -167px;
+      padding: 60px 95px;
+      background: $special-green-bright;
+      text-align: center ;
+      h1{
+        font-size: 50px;
+      }
+      p{
+        font-size: 24px;
+        color: $text-black3;
+      }
+    }
+    &>p{
+      width: 55%;
+      margin: 0 auto;
+      padding:68px 0;
+      color: $white;
+      text-align: center;
+    }
+  }
+  .about-us-part{
+    padding-top: 128px;
+    background: $white;
+    .part-text{
+      width: 90%;
+      padding-top: 85px;
+      margin: 0 auto;
+    }
+    .join-us{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 115px;
+      padding: 25px 0;
+      background: $special-green-bright;
+      text-align: center;
+      h3{
+        &:last-child{
+          color: $white;
+          // button {
+          //   height: 30px;
+          //   padding: 0 15px;
+          //   margin-left: 10px;
+          //   line-height: 30px;
+          //   background: $white;
+          //   color: $text-black3;
+          //   border-radius: 5px;
+          // }
+        }
+      }
+    }
+  }
+
+  .about-us-footer{
+    width: 100%;
+    background: $background-black;
+    color: $white;
+    overflow: hidden;
+    h2{
+      color: $white;
+    }
+    &>div{
+      width: 85%;
+      padding-top: 45px;
+      padding-bottom: 70px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    img{
+      width: 70%;
+    }
+  }
+  // form
+  form{
+    input, textarea{
+      background: transparent;
+    }
+    input{
+      min-height: 30px;
+    }
+    button{
+      width: 100%;
+      margin-bottom: 15px;
+      // background: $white;
+      border-radius: 5px;
+    }
+  }
+  //link-list
+  .link-list{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 0;
+    list-style: none;
+    li{
+      flex: 1;
+      width: 25%;
+      text-align: center;
+      a{
+        display: inline-block;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        box-shadow:0 0 5px $white inset, 0 0 5px $white;
+        line-height: 55px;
+        span{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .ant-tabs {
+    height: 100%;
+    width: 63%;
+    padding: 20px 50px;
+    background-color: $white;
+  }
+  .ant-tabs-nav {
+    .ant-tabs-tab-active {
+      color: $brand-color;
+    }
+    .ant-tabs-tab:hover {
+      color: $brand-color;
+    }
+  }
+  .ant-tabs-ink-bar {
+    background-color: $brand-color;
+  }
+  .ant-tabs-bar {
+    border-width: 0;
+  }
+  .ant-btn {
+    margin-top: 3%;
+    margin-bottom: 20%;
+    border-color: $button-green;
+    width: 100%;
+    height: 53px;
+    font-size: 19px;
+    color: $white;
+    background-color: $button-green;
+    &:hover,
+    &:focus {
+      border-color: $brand-color;
+      color: $white;
+      background-color: $brand-color;
+    }
+  }
+  .login-div {
+    z-index: 800;
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    opacity: 0.8;
+  }
+  .title {
+    margin-bottom: 50px;
+    color: $white;
+  }
+  .body-div {
+    margin: auto;
+    width: 75%;
+    overflow: hidden;
+    padding: 0 5%;
+    .body-div-background {
+      background-color: $white;
+      background-image: url('../../../../assets/contactUs.jpg');
+      background-size: contain;
+      -moz-background-size: auto;
+    }
+  }
+  .prompt-text {
+    margin-bottom: 16%;
+    font-weight: 400;
+    font-size: 13px;
+    .link-color {
+      color: $brand-color;
+    }
+  }
+  .reset-div {
+    height: 100%;
+    width: 63%;
+    padding: 70px 50px 70px;
+    background-color: $white;
+    .reset-label {
+      margin-top: 10%;
+      font-weight: 400;
+      font-size: 19px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .body-div {
+      width: 80%;
+    }
+  }
+  @media (max-width: 768px) {
+    .body-div {
+      width: 100%;
+      min-width: 300px;
+      padding: 0 20px;
+    }
+    .ant-tabs {
+      width: 100%;
+      padding: 25px;
+    }
+    .prompt-text {
+      margin-bottom: 5%;
+      font-size: 10px;
+    }
+    .reset-div {
+      width: 100%;
+      padding: 25px;
+
+      .reset-label {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media (max-height: 900px) {
+    .login-div {
+      padding: 30px 0;
+    }
+    .title {
+      margin-bottom: 30px;
+      display: none;
+    }
+    .m-t {
+      margin-top: 6%;
+    }
+    .form-group {
+      margin-bottom: -15px;
+    }
+  }
+}

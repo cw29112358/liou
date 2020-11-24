@@ -1,0 +1,84 @@
+// File with all scss variables. Import it in your .scss file as "~scss_vars"
+@import './mixins.scss';
+// UI
+$sidebar-size: 150px;
+
+// COLORS
+$black: #000;
+$black2: #333;
+$gray-dark1: #666;
+$gray-dark2: #888;
+$gray-dark3: #999;
+$gray: #ccc;
+$gray-light2: #ddd;
+$gray-light: #eee;
+$white: #fff;
+$red: #f00;
+
+//brand
+$brand-color: #53cac4;
+$brand-color-selected: #007046;
+
+//text
+$text-black: $black;
+$text-black2: #1b1b1b;
+$text-black3: $black2;
+$text-white: #e8e8e8;
+$text-white2: $white;
+$text-gray: #484848;
+$text-gray2: $gray-dark1;
+$text-gray3: #8F8F8F;
+$text-gray4: $gray-dark3;
+$text-gray5: #B3BBC6;
+$text-gray6: #9ea1ad;
+$text-green-dark2: #15aa9c;
+$text-green-dark1: #26bbad;
+$text-green: #00c6b3;
+$text-blue-dark: #3E435B;
+$text-blue: #4AABFF;
+$text-blue-grey: #8c90ae;
+$text-yellow: #FFBA0D;
+$text-green-brand: $brand-color;
+
+//background
+$background: #f3f3f3;
+$background-black: #1f1e1f;
+$background-white: $white;
+$background-white2: #f8f8f8;
+$background-white3: #fafafa;
+$background-white4: #FBFBFB;
+$background-white5: #F8F8FA;
+$background-white-blue: #dbe2e8;
+$background-blue-grey: #f0f3f4;
+$background-blue-green: #204d74;
+$background-blue-dark: $text-blue-dark;
+$background-gray: #e5e5e5;
+$background-gray-dark: #9e9e9e;
+$background-gray2: $gray-dark3;//#999
+$background-gray3: #f3f5f6;
+$background-gray-green: #e5eaec;
+$background-green: $brand-color;
+$background-green2: #00c6b3;
+$background-green3: #00babd;
+$background-green4: rgba(83,202,196,0.5);
+$background-green5: rgba(83, 202, 196, 0.3);
+
+//border
+$border-white1: $text-white;
+$border-white-blue: #DEE3E6;
+$border-white-blue2: #DCE0E4;
+$border-white-green: #e5f7f6;
+$border-gray: #d8d8d8;
+$border-gray-light: #EAEAEA;
+$border-gray-dark: #d9d9d9;
+$border-green: #42ACA7;
+$border-green-bright: $brand-color;
+
+//button
+$button-green: #00c8cc;
+
+//special
+$special-black-transparent: rgba(0, 0, 0, 0.26);
+$special-blue-transparent: rgba(45,183,245, 80%);
+$special-green-bright: rgba(83, 202, 196, 0.6);
+$special-green-transparent: rgba(83, 202, 196, 0.09);

@@ -1,0 +1,21 @@
+@import '~scss_vars';
+
+.product-box {
+  .leasedLabel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom: 30px solid $brand-color;
+  	border-left: 30px solid transparent;
+  	border-right: 30px solid transparent;
+  	height: 0;
+  	width: 140px;
+    transform: rotate(45deg) translate(28%, -19%);
+  }
+
+  .leasedFont {
+    color:$white;
+    text-align:center;
+    font-weight: bold;
+  }  
+}

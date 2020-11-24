@@ -1,0 +1,82 @@
+@import '~scss_vars';
+.app {
+  // > xl
+  min-height: 100vh;
+
+  .app-wrap {
+    min-height: 100vh;
+  }
+  .app-main {
+    padding-bottom: 60px;
+  }
+  .app-page {
+    > * {
+      display: block;
+    }
+  }
+  .app-footer {
+    margin-top: -60px;
+    height: 60px;
+    background-color: transparent;
+  }
+
+  &.footer-hidden {
+    .app-main {
+      padding-bottom: 0;
+    }
+    .app-footer {
+      display: none;
+    }
+  }
+}
+.survey-modal {
+  margin: 0 10px;
+  .ant-modal-body {
+    position: relative;
+    padding: 0px;
+    iframe {
+      width: 100%;
+    }
+    .surveyBody {
+      text-align: center;
+      margin: 50px;
+      button {
+        background-color: $button-green;
+        border-color: $button-green;
+        color: $text-white;
+        font-weight: 400;
+      }
+    }
+    .button-wrapper {
+      background-color: $brand-color;
+      text-align: center;
+      padding-bottom: 20px;
+      padding-top: 10px;
+      .surveyTitle{
+        font-size: 16px;
+        color: $white;
+      }
+      .ignore {
+        background-color: $button-green;
+        border-color: $button-green;
+        margin-left: 40px;
+        color: $text-white;
+        font-weight: 400;
+      }
+      .noPrompt {
+        background-color: $brand-color;
+        border: 0;
+        color: $gray-light2;
+        cursor: pointer;
+        &:hover {
+          color: $text-white;
+        }
+      }
+    }
+  }
+  // @media (max-width: 768px) {
+  //   .ant-modal-content {
+  //     height: 500px;
+  //   }
+  // }
+}

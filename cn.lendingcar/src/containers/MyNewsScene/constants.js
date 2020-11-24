@@ -1,0 +1,11 @@
+/*
+ *
+ * MyNewsScene constants
+ *
+ */
+
+export const LOAD_NOTIFICATIONS = 'src/MyNewsScene/LOAD_NOTIFICATIONS';
+export const LOAD_NOTIFICATIONS_SUCCESS = 'src/MyNewsScene/LOAD_NOTIFICATIONS_SUCCESS';
+export const LOAD_NOTIFICATIONS_FAIL = 'src/MyNewsScene/LOAD_NOTIFICATIONS_FAIL';
+
+export const SET_NOTIFICATIONS_LAST_READ_TIME = 'src/MyNewsScene/SET_NOTIFICATIONS_LAST_READ_TIME';

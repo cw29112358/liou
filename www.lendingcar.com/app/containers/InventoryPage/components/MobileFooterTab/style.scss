@@ -1,0 +1,18 @@
+@import '~scss_vars';
+
+.mobile-footer-tab{
+  display: flex;
+  position: fixed;
+  bottom:0;
+  left:0;
+  width: 100%;
+  height:50px;
+  padding:10px;
+  background: $text-green;
+  z-index: 9999;
+  a{
+    flex: 1;
+    color: $white;
+    text-align: center;
+  }
+}

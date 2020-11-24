@@ -1,0 +1,42 @@
+@import '~scss_vars';
+
+.ant-tooltip {
+  margin-right: 15px;
+}
+.ant-tooltip-placement-bottom .ant-tooltip-arrow, .ant-tooltip-placement-bottomLeft .ant-tooltip-arrow, .ant-tooltip-placement-bottomRight .ant-tooltip-arrow {
+  border-bottom-color: $white;
+}
+.ant-tooltip-inner {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  background-color: $white;
+  color: $text-blue-dark;
+}
+
+.rental-Date-form {
+  .deposit-price {
+    color: $brand-color;
+  }
+  .switch-line {
+    display: flex;
+    align-items: center;
+    .rc-switch {
+      top: 0;
+    }
+    .margin-b-25 {
+      margin-bottom: -25px;
+    }
+  }
+  .deposit-line {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 14px;
+    align-items: baseline;
+    color: $black;
+    .margin-l-10 {
+      margin-left: 10px;
+    }
+  }
+  .ant-switch-checked {
+    background-color: $brand-color;
+  }
+}

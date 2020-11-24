@@ -1,0 +1,158 @@
+
+// Auto-generated file created by react-native-storybook-loader
+// Do not edit.
+//
+// https://github.com/elderfo/react-native-storybook-loader.git
+
+function loadStories() {
+  require('../src/components/AppFooter/stories/index.stories');
+  require('../src/components/AppHeader/stories/index.stories');
+  require('../src/components/Avatar/stories/index.stories');
+  require('../src/components/BookingFooter/stories/index.stories');
+  require('../src/components/CarImage/stories/index.stories');
+  require('../src/components/CarInfo/stories/index.stories');
+  require('../src/components/CardInfo/stories/index.stories');
+  require('../src/components/DivisionLine/stories/index.stories');
+  require('../src/components/DollarText/stories/index.stories');
+  require('../src/components/EmptyList/stories/index.stories');
+  require('../src/components/Feedback/stories/index.stories');
+  require('../src/components/FilterBar/stories/index.stories');
+  require('../src/components/InfoList/stories/index.stories');
+  require('../src/components/InfoListItem/stories/index.stories');
+  require('../src/components/Loader/stories/index.stories');
+  require('../src/components/Mask/stories/index.stories');
+  require('../src/components/MemberCard/stories/index.stories');
+  require('../src/components/RNToast/stories/index.stories');
+  require('../src/components/ReactCalendar/stories/index.stories');
+  require('../src/components/SideBar/stories/index.stories');
+  require('../src/components/Steps/stories/index.stories');
+  require('../src/components/VerificationCodeTimer/stories/index.stories');
+  require('../src/containers/AgentScene/components/AgentModal/stories/index.stories');
+  require('../src/containers/AgentScene/components/RefIdModal/stories/index.stories');
+  require('../src/containers/FaqScene/components/NewbieGuide/stories/index.stories');
+  require('../src/containers/FaqScene/components/RentingInsurance/stories/index.stories');
+  require('../src/containers/FaqScene/components/RentingStrategy/stories/index.stories');
+  require('../src/containers/FaqScene/components/ServiceItem/stories/index.stories');
+  require('../src/containers/HomeScene/components/AreaSelectModal/stories/index.stories');
+  require('../src/containers/HomeScene/components/CarCard/stories/index.stories');
+  require('../src/containers/HomeScene/components/HomeHeader/stories/index.stories');
+  require('../src/containers/InventoryCarScene/components/CalendarModal/stories/index.stories');
+  require('../src/containers/InventoryCarScene/components/CarFeatures/stories/index.stories');
+  require('../src/containers/InventoryCarScene/components/CarInfoCard/stories/index.stories');
+  require('../src/containers/InventoryCarScene/components/CarouselImages/stories/index.stories');
+  require('../src/containers/InventoryCarScene/components/ConfigurationInfo/stories/index.stories');
+  require('../src/containers/InventoryCarScene/components/ConfigurationModal/stories/index.stories');
+  require('../src/containers/InventoryCarScene/components/Location/stories/index.stories');
+  require('../src/containers/InventoryCarScene/components/SimilarVehicles/stories/index.stories');
+  require('../src/containers/InventoryScene/components/BrandFilterPart/stories/index.stories');
+  require('../src/containers/InventoryScene/components/ColorFilterPart/stories/index.stories');
+  require('../src/containers/InventoryScene/components/OtherFilter/stories/index.stories');
+  require('../src/containers/InventoryScene/components/ProductList/stories/index.stories');
+  require('../src/containers/InventoryScene/components/RangeSlide/stories/index.stories');
+  require('../src/containers/InventoryScene/components/SearchHeader/stories/index.stories');
+  require('../src/containers/InventoryScene/components/SizeList/stories/index.stories');
+  require('../src/containers/InventoryScene/components/SortFilterPart/stories/index.stories');
+  require('../src/containers/MemberScene/components/MemberCard/stories/index.stories');
+  require('../src/containers/MemberScene/components/PrivilegeList/stories/index.stories');
+  require('../src/containers/PaymentResultScene/stories/index.stories');
+  require('../src/containers/SettingScene/components/SettingSceneFeedBack/stories/index.stories');
+  require('../src/containers/TripScene/components/TripCard/stories/index.stories');
+  require('../src/containers/TripScene/components/TripList/stories/index.stories');
+  require('../src/containers/TripScene/components/TripTabs/stories/index.stories');
+  require('../src/forms/ChangePasswordCurrentForm/stories/index.stories');
+  require('../src/forms/ChangePasswordNewForm/stories/index.stories');
+  require('../src/forms/DriverForm/stories/index.stories');
+  require('../src/forms/FeedBackForm/stories/index.stories');
+  require('../src/forms/LoginForm/stories/index.stories');
+  require('../src/forms/PasswordForm/stories/index.stories');
+  require('../src/forms/PaymentForm/stories/index.stories');
+  require('../src/forms/PhoneVerificationForm/stories/index.stories');
+  require('../src/forms/RefIdForm/stories/index.stories');
+  require('../src/forms/formFields/AreaPickerInput/stories/index.stories');
+  require('../src/forms/formFields/Avatar/stories/index.stories');
+  require('../src/forms/formFields/NumberInput/stories/index.stories');
+  require('../src/forms/formFields/RadioButton/stories/index.stories');
+  require('../src/forms/formFields/SelectInput/stories/index.stories');
+  require('../src/forms/formFields/TextInput/stories/index.stories');
+  require('../src/forms/formFields/TextareaInput/stories/index.stories');
+  
+}
+
+const stories = [
+  '../src/components/AppFooter/stories/index.stories',
+  '../src/components/AppHeader/stories/index.stories',
+  '../src/components/Avatar/stories/index.stories',
+  '../src/components/BookingFooter/stories/index.stories',
+  '../src/components/CarImage/stories/index.stories',
+  '../src/components/CarInfo/stories/index.stories',
+  '../src/components/CardInfo/stories/index.stories',
+  '../src/components/DivisionLine/stories/index.stories',
+  '../src/components/DollarText/stories/index.stories',
+  '../src/components/EmptyList/stories/index.stories',
+  '../src/components/Feedback/stories/index.stories',
+  '../src/components/FilterBar/stories/index.stories',
+  '../src/components/InfoList/stories/index.stories',
+  '../src/components/InfoListItem/stories/index.stories',
+  '../src/components/Loader/stories/index.stories',
+  '../src/components/Mask/stories/index.stories',
+  '../src/components/MemberCard/stories/index.stories',
+  '../src/components/RNToast/stories/index.stories',
+  '../src/components/ReactCalendar/stories/index.stories',
+  '../src/components/SideBar/stories/index.stories',
+  '../src/components/Steps/stories/index.stories',
+  '../src/components/VerificationCodeTimer/stories/index.stories',
+  '../src/containers/AgentScene/components/AgentModal/stories/index.stories',
+  '../src/containers/AgentScene/components/RefIdModal/stories/index.stories',
+  '../src/containers/FaqScene/components/NewbieGuide/stories/index.stories',
+  '../src/containers/FaqScene/components/RentingInsurance/stories/index.stories',
+  '../src/containers/FaqScene/components/RentingStrategy/stories/index.stories',
+  '../src/containers/FaqScene/components/ServiceItem/stories/index.stories',
+  '../src/containers/HomeScene/components/AreaSelectModal/stories/index.stories',
+  '../src/containers/HomeScene/components/CarCard/stories/index.stories',
+  '../src/containers/HomeScene/components/HomeHeader/stories/index.stories',
+  '../src/containers/InventoryCarScene/components/CalendarModal/stories/index.stories',
+  '../src/containers/InventoryCarScene/components/CarFeatures/stories/index.stories',
+  '../src/containers/InventoryCarScene/components/CarInfoCard/stories/index.stories',
+  '../src/containers/InventoryCarScene/components/CarouselImages/stories/index.stories',
+  '../src/containers/InventoryCarScene/components/ConfigurationInfo/stories/index.stories',
+  '../src/containers/InventoryCarScene/components/ConfigurationModal/stories/index.stories',
+  '../src/containers/InventoryCarScene/components/Location/stories/index.stories',
+  '../src/containers/InventoryCarScene/components/SimilarVehicles/stories/index.stories',
+  '../src/containers/InventoryScene/components/BrandFilterPart/stories/index.stories',
+  '../src/containers/InventoryScene/components/ColorFilterPart/stories/index.stories',
+  '../src/containers/InventoryScene/components/OtherFilter/stories/index.stories',
+  '../src/containers/InventoryScene/components/ProductList/stories/index.stories',
+  '../src/containers/InventoryScene/components/RangeSlide/stories/index.stories',
+  '../src/containers/InventoryScene/components/SearchHeader/stories/index.stories',
+  '../src/containers/InventoryScene/components/SizeList/stories/index.stories',
+  '../src/containers/InventoryScene/components/SortFilterPart/stories/index.stories',
+  '../src/containers/MemberScene/components/MemberCard/stories/index.stories',
+  '../src/containers/MemberScene/components/PrivilegeList/stories/index.stories',
+  '../src/containers/PaymentResultScene/stories/index.stories',
+  '../src/containers/SettingScene/components/SettingSceneFeedBack/stories/index.stories',
+  '../src/containers/TripScene/components/TripCard/stories/index.stories',
+  '../src/containers/TripScene/components/TripList/stories/index.stories',
+  '../src/containers/TripScene/components/TripTabs/stories/index.stories',
+  '../src/forms/ChangePasswordCurrentForm/stories/index.stories',
+  '../src/forms/ChangePasswordNewForm/stories/index.stories',
+  '../src/forms/DriverForm/stories/index.stories',
+  '../src/forms/FeedBackForm/stories/index.stories',
+  '../src/forms/LoginForm/stories/index.stories',
+  '../src/forms/PasswordForm/stories/index.stories',
+  '../src/forms/PaymentForm/stories/index.stories',
+  '../src/forms/PhoneVerificationForm/stories/index.stories',
+  '../src/forms/RefIdForm/stories/index.stories',
+  '../src/forms/formFields/AreaPickerInput/stories/index.stories',
+  '../src/forms/formFields/Avatar/stories/index.stories',
+  '../src/forms/formFields/NumberInput/stories/index.stories',
+  '../src/forms/formFields/RadioButton/stories/index.stories',
+  '../src/forms/formFields/SelectInput/stories/index.stories',
+  '../src/forms/formFields/TextInput/stories/index.stories',
+  '../src/forms/formFields/TextareaInput/stories/index.stories',
+  
+];
+
+module.exports = {
+  loadStories,
+  stories,
+};

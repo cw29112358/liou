@@ -1,0 +1,276 @@
+@import '~scss_vars';
+
+.ant-tooltip {
+  margin-right: 15px;
+}
+.ant-tooltip-placement-bottom .ant-tooltip-arrow, .ant-tooltip-placement-bottomLeft .ant-tooltip-arrow, .ant-tooltip-placement-bottomRight .ant-tooltip-arrow {
+  border-bottom-color: $white;
+}
+.ant-tooltip-inner {
+  font-size: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  background-color: $white;
+  color: $text-black;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.reservation-price {
+  background-color: $white;
+  padding: 20px 15px;
+  border: 1px solid $border-gray-dark;
+  max-width: 370px;
+
+  .booking-price-cmp {
+
+    .switch-line {
+      display: flex;
+      align-items: center;
+      .rc-switch {
+        top: 0;
+      }
+      .margin-b-25 {
+        margin-bottom: -25px;
+      }
+    }
+    .deposit-line {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 14px;
+      align-items: baseline;
+      color: $black;
+      .margin-l-10 {
+        margin-left: 10px;
+      }
+    }
+    .ant-switch-checked {
+      background-color: $brand-color;
+    }
+  }
+
+  .dueNow-price {
+    color: $brand-color;
+  }
+
+  .deposit-price {
+    color: $black;
+  }
+
+  .car-title {
+    margin-top: 18px;
+    margin-bottom: 13px;
+    font-size: 22px;
+    letter-spacing: 0;
+  }
+  .info-div {
+    border-top: 1px solid $border-gray-dark;
+    padding-top: 20px;
+    .anticon-question-circle-o {
+      height: 14px;
+    }
+  }
+  .date-font {
+    font-size: 16px;
+    color: $text-blue-dark;
+  }
+  .date-error {
+    color: $red;
+  }
+  .term-error {
+    color: $red;
+  }
+  .term-prompt,
+  .date-prompt {
+    text-align: left;
+    line-height: 1.3;
+    color: $red;
+    font-size: 10px;
+  }
+
+  .pick-return-info {
+    margin-bottom: 20px;
+  }
+  .margin-b-40 {
+    margin-bottom: 40px;
+  }
+  .pick-return-date {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    // margin-bottom: 20px;
+  }
+  .area-pick-up {
+    text-align: left;
+    font-size: 12px;
+    color: $text-blue-grey;
+  }
+  .area-return {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 12px;
+    color: $text-blue-grey;
+  }
+  .pick-return-area {
+    display: flex;
+    justify-content: space-between;
+  }
+  .icon {
+    margin-right: 5px;
+  }
+  .arrow-right {
+    // margin-left: -10px;
+  }
+  .date-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .info-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+  }
+  .margin-b {
+    margin-bottom: 0px;
+    > span:nth-of-type(2) {
+      color: $red;
+    }
+  }
+  .margin-adjust {
+    margin-Top: -8px;
+    margin-Bottom: 8px;
+  }
+  .margin-minus {
+    margin-top: -10px;
+    margin-bottom: -10px;
+  }
+  .total-line {
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid $border-gray-dark;
+  }
+  .total {
+    font-size: 22px;
+    letter-spacing: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .arrow-right {
+    margin-left: 0px;
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .reservation-price {
+    .area-return {
+      margin-left: 100px;
+    }
+    // .arrow-right {
+    //   margin-left: 0px;
+    //   width: 20%;
+    // }
+  }
+  .arrow-right {
+    margin-left: 0px;
+    width: 20%;
+  }
+  .date-font {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1050px){
+  .arrow-right {
+    margin-left: 0px;
+    width: 10%;
+  }
+  .date-font {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+  .arrow-right {
+    margin-left: 0px;
+    width: 5%;
+  }
+  .date-font {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 767px){
+  .reservation-price {
+    margin-top: 20px;
+    border: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    background-color: transparent;
+
+    .pick-return-info,
+    .info-div-box {
+      border-radius: 4px;
+      padding: 20px;
+      box-shadow: 0 0 15px $border-gray-light;
+      background-color: $background-white;
+    }
+    .pick-return-area {
+      flex-direction: column;
+      p {
+        color: rgba(0, 0, 0, 0.65);
+        span:first-child {
+          font-size: 14px;
+          color: $text-black3;
+        }
+      }
+    }
+    .area-return {
+      margin-left: 0;
+    }
+    .pick-return-date {
+      margin-bottom: 0;
+    }
+    .arrow-right {
+      margin-left: 0px;
+      width: 10%;
+      min-height: 5px;
+    }
+    .date-font {
+      font-size: 14px;
+      color: $text-black3;
+    }
+
+    .info-div-box {
+      .info-div {
+        font-size: 12px;
+      }
+      .info-line {
+        font-weight: 400;
+      }
+      .info-div:first-child {
+        border-top: 0;
+        padding-top: 0;
+      }
+      .info-div:last-child {
+        .info-line {
+          justify-content: center;
+          align-items: baseline;
+        }
+        text-align: left;
+        margin-bottom: 10px;
+        span:first-child {
+          width: 100%;
+        }
+      }
+    }
+    .date-error {
+      color: $red;
+    }
+  }
+}

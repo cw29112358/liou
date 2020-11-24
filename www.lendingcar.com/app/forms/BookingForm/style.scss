@@ -1,0 +1,32 @@
+@import '~scss_vars';
+.form-div-height {
+  .nextButton {
+    background-color: $brand-color;
+    color: $white;
+    border-radius: 3px;
+    font-size: 18px;
+  }
+
+  .nextButton:hover,
+  .nextButton:focus,
+  .nextButton:active,
+  .nextButton.active,
+  .nextButton:active:hover,
+  .nextButton:active:focus {
+    background-color: $brand-color;
+    color: $white;
+    border-radius: 3px;
+    font-size: 18px;
+  }
+
+  .fontRed {
+    color: $red;
+  }
+  .form-control{
+    -webkit-appearance: none;
+  }
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+  }
+}

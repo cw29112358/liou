@@ -1,0 +1,230 @@
+@import '~scss_vars';
+
+.grid-filter {
+  overflow: hidden;
+  margin: 10px 0px 0px 0px;
+  .auto-scroll {
+    width: 100%;
+    overflow: auto;
+  }
+  .filter-pills {
+    display: inline-block;
+    max-width: 90%;
+    .pills-label {
+      display: inline-flex;
+      align-items: center;
+    }
+    .pill {
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid $border-white1;
+      margin: 5px;
+      padding: 2px 5px;
+      cursor: pointer;
+      span {
+        white-space: nowrap;
+      }
+    }
+    .fa {
+      margin-left: 10px;
+    }
+  }
+
+  .pills-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .show-button {
+    height: 27px;
+    width: 85px;
+    border: 1px solid $border-white1;
+    margin: 10px 5px;
+    padding: 2px 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .show-button-div {
+    min-width: 50px;
+  }
+  .filter-box {
+      color: $text-black3;
+      font-weight: bold;
+      display: block;
+      font-weight: 300;
+      border: 1px solid $border-white1;
+      border-bottom: 0px;
+      padding: 0 15px;
+      .ant-row-flex-space-between {
+        display: -webkit-inline-box;
+      }
+      .row-border {
+        border-bottom: 1px solid $border-white1;
+        padding-top: 15px;
+      }
+      .filter-section {
+        color: $text-black3;
+        width: 155px;
+        margin: 0 10px;
+      }
+      .filter-section-active {
+        color: $brand-color;
+        width: 155px;
+        margin: 0 10px;
+      }
+      .mobile-filter-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $background-gray3;
+        color: $text-black;
+        width: 80px;
+        height: 40px;
+        margin: 5px 10px;
+        padding: 10px 5px;
+        font-size: 12px;
+      }
+      .mobile-filter-section-active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $brand-color;
+        height: 40px;
+        color: $white;
+        width: 80px;
+        margin: 5px 10px;
+        padding: 10px 5px;
+        font-size: 12px;
+      }
+      .filter-title {
+        display: flex;
+        justify-content: flex-start;
+        // align-items: center;
+        width: 136px;
+        color: $brand-color;
+      }
+      .checkbox-color {
+        color: $text-white;
+      }
+      .filter-block {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: 90%;
+      }
+  }
+  .mask {
+    cursor: pointer;
+    text-align: center;
+    color: $black;
+    height: 40px;
+    width: 1140px;
+    line-height: 40px;
+  }
+  .half-hidden {
+    height: 170px;
+    overflow: hidden;
+    width: 100%;
+    .row-border {
+      // -webkit-filter: blur(1px); /* Chrome, Opera */
+      //    -moz-filter: blur(1px);
+      //     -ms-filter: blur(1px);
+      //         filter: blur(1px);
+    }
+  }
+  .filters {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  .not-show {
+    display: none;
+  }
+
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .filter-box {
+      .filter-section {
+        margin: 0 5px;
+      }
+      .filter-section-active {
+        margin: 0 5px;
+      }
+      .filter-title {
+        width: 80px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .filter-box {
+        .filter-section {
+          margin: 0 15px;
+        }
+        .filter-section-active {
+          margin: 0 15px;
+        }
+        .filter-title {
+          width: 60px;
+        }
+    }
+    .filter-pills {
+      display: flex;
+      height: 40px;
+      overflow-x: scroll;
+      .pills-label {
+      }
+      .pill {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        margin: 0 10px;
+        padding: 5px;
+        font-size: 12px;
+        width: auto;
+      }
+      .fa {
+      }
+    }
+    .show-button {
+      margin: 15px 5px;
+    }
+    .show-button-div {
+    }
+    .filter-box {
+        .ant-row-flex-space-between {
+        }
+        .row-border {
+        }
+        .filter-section {
+        }
+        .filter-section-active {
+        }
+        .filter-title {
+        }
+        .checkbox-color {
+        }
+        .filter-block {
+          margin: 0;
+          width: 100%;
+        }
+    }
+    .mask {
+      cursor: pointer;
+    }
+    .half-hidden {
+      .row-border {
+      }
+    }
+    .filters {
+      overflow: hidden;
+      display: block;
+    }
+    .not-show {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+/**
+*
+* {{ properCase name }}
+*
+*/
+{{#if wantTransLate}}
+
+/* global translate */
+{{/if}}
+
+import React from 'react';
+import PropTypes from 'prop-types';
+import pick from 'lodash/pick';
+import { reduxForm } from 'redux-form/immutable';
+import {
+  Button,
+  Text,
+  Form,
+} from 'native-base';
+
+import formValidators from 'utils/formValidators';
+
+import Group from 'forms/formFields';
+import ValidForm from 'forms/ValidForm';
+
+import styles from './styles';
+
+const {
+  isRequired, isEmail, isPassword, isPasswordLongEnough, isPasswordShortEnough,
+} = formValidators;
+
+class {{ properCase name }} extends {{{ type }}} { // eslint-disable-line
+  render() {
+    const { handleSubmit, ...otherProps } = this.props;
+
+    // Add your formField in this object
+    const formFieldsObject = {
+      email: {
+        type: 'textInput',
+        validate: [isRequired, isEmail],
+        placeholder: 'placeholderEmail',
+        itemSettings: {
+          rounded: true,
+        },
+        itemstyle: styles.itemstyle,
+        iconStyle: styles.iconPasswordStyle,
+        hasDeleteIcon: true,
+      },
+      password: {
+        type: 'textInput',
+        secureTextEntry: true,
+        placeholder: 'placeholderPassword',
+        itemSettings: {
+          rounded: true,
+        },
+        itemstyle: styles.itemstyle,
+        iconStyle: styles.iconPasswordStyle,
+        validate: [isRequired, isPassword, isPasswordLongEnough, isPasswordShortEnough],
+      },
+    };
+
+    // 使用 pick 方法挑选出你需要展示的formField
+    const formFields = [
+      pick(formFieldsObject, 'email', 'password'),
+    ];
+
+    return (
+      <Form style={styles.form}>
+        {formFields.map((formField) => (
+          <Group
+            fieldsObject={formField}
+            key={formField}
+            {...otherProps}
+          />
+        ))}
+        <Button
+          block
+          primary
+          style={styles.button}
+          onPress={handleSubmit}
+        >
+          <Text>{{#if wantTransLate}}{translate('submit')}{{else}}Submit{{/if}}</Text>
+        </Button>
+      </Form>
+    );
+  }
+}
+
+{{ properCase name }}.defaultProps = {
+};
+
+{{ properCase name }}.propTypes = {
+  handleSubmit: PropTypes.func.isRequired,
+};
+
+const FormWithError = (props) => <ValidForm {...props} component={{{preCurly (properCase name)}}} />;
+
+const form = reduxForm({
+  form: '{{ camelCase name }}',
+  destroyOnUnmount: false,
+})(FormWithError);
+
+export default form;

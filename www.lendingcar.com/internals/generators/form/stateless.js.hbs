@@ -1,0 +1,87 @@
+/**
+*
+* {{ properCase name }}
+*
+*/
+
+import React from 'react';
+import PropTypes from 'prop-types';
+import { reduxForm } from 'redux-form/immutable';
+import { Button } from 'antd';
+import { pick } from 'lodash';
+
+import * as FormField from 'components/Form/BootstrapFormField';
+{{#if wantMessages}}
+import TranslatedMessage from 'components/TranslatedMessage';
+{{/if}}
+import { isRequired, isValidName } from 'utils/validators';
+
+{{#if wantMessages}}
+import messages from './messages';
+{{/if}}
+import './style.scss';
+
+const formFieldsObject = {
+  sampleTextInputName: {
+    type: 'text',
+    validate: [isRequired, isValidName],
+    className: 'col-sm-4',
+  },
+  sampleSelectInputName: {
+    type: 'select',
+    validate: [isRequired],
+    className: 'col-sm-4',
+    customOptions: ['Option1', 'Option2', 'Option3'],
+  },
+  sampleSelectHorizontalInputName: {
+    type: 'selectHorizontal',
+    validate: [isRequired],
+    className: 'col-sm-4',
+    customObjectsArray: [{ display: 'option1', value: 1 }, { display: 'option2', value: 2 }],
+    // OR customOptions: ['Option1', 'Option2', 'Option3'],
+    displayedOption: 'display',
+    defaultOption: 'Select an option',
+  },
+  sampleFileInputName: {
+    type: 'file',
+    fileType: 'pdf', // images, pdf, doc, excel
+    className: 'col-sm-4',
+  },
+  sampleRadioInputName: {
+    type: 'radioInput',
+    customOptions: [{ display: 'option1', value: 1 }, { display: 'option2', value: 2 }],
+    // OR customOptions: ['option1', 'option2'],
+    displayedOption: 'display',
+  },
+};
+
+function {{ properCase name }}(props) {
+  const { handleSubmit, submitting, ...otherProps } = props;
+  const groups = [
+    pick(formFieldsObject, 'sampleTextInputName', 'sampleSelectInputName'),
+    pick(formFieldsObject, 'sampleFileInputName'),
+  ];
+  return (
+    <form onSubmit={handleSubmit} className="{{ kebabCase name }}">
+      {groups.map((group, i) => <FormField.Group fieldsObject={group} key={i} {...otherProps} />)}
+      <div className="text-center">
+        <Button type="submit" className="btn-brand-selected" disabled={submitting}>
+          {{#if wantMessages}}
+          <TranslatedMessage messages={messages} messageId="next" />
+          {{/if}}
+        </Button>
+      </div>
+    </form>
+  );
+}
+
+{{ properCase name }}.propTypes = {
+  handleSubmit: PropTypes.func.isRequired,
+  submitting: PropTypes.bool,
+};
+
+export default reduxForm({
+  form: '{{ properCase name }}',
+  destroyOnUnmount: false,
+  enableReinitialize: true,
+})({{ properCase name }});

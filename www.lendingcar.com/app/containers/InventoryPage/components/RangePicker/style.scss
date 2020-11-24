@@ -1,0 +1,62 @@
+@import '~scss_vars';
+
+.ant-slider-mark-text {
+  width: auto !important;
+  margin-left: 0 !important;
+}
+.ant-slider-mark-text:last-child {
+  left: auto !important;
+  right: 0 !important;
+}
+
+.range-options {
+  overflow: hidden;
+  display: flex;
+  padding: 15px 10px;
+  align-items: center;
+  justify-content: space-between;
+  .range-slider {
+    width: 380px;
+    &:first-of-type {
+      margin-left: -5px;
+    }
+  }
+  .range-info {
+    line-height: 38px;
+  }
+  .range-title {
+    color: $brand-color;
+  }
+  .range-detail {
+    float: right;
+  }
+
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .range-slider {
+      width: 280px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .ant-slider-track {
+    background-color: $brand-color;
+  }
+  .ant-slider-handle {
+    border-color: $brand-color;
+    &.ant-tooltip-open {
+      border-color: $brand-color;
+    }
+  }
+  .ant-slider:hover {
+    .ant-slider-track {
+      background-color: $brand-color;
+    }
+    .ant-slider-handle:not(.ant-tooltip-open) {
+      border-color: $brand-color;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+export const defaultValue = {
+  vehicleMake: 'BMW',
+  vehicleModel: '3 Series 335i 2dr Convertible',
+  vehicleType: 'Sedan',
+  vehicleYear: '2009',
+  vehicleColor: 'White',
+  vehicleMileage: '36000',
+  feature: '80k miles, Sport Package, Premium Package, Convertible, Leather Seat, Automatic, Navigation System',
+  vehicleImage: '1Kh4CLsehPH6uQs3f8HdidCecgtncgUkcA/7456e29d2058c30f859beabb5e1f2069.jpg',
+
+  firstName: 'john',
+  lastName: 'henson',
+  birthday: '2018-12-01',
+  driverLicenseNum: 'dl123sk1j4',
+  driverLicenseState: 'CA',
+  driverLicenseType: 'United States',
+
+  bookingFee: '200',
+  bookingId: 'LC1452342551',
+  bookingState: 'leasing',
+  createdTime: '1505773270342',
+  term: '12',
+  insurance: '200',
+
+  pickupDate: '2018-03-20',
+  pickupAddress1: '3555 S El Camino Real',
+  pickupAddress2: '',
+  pickupCity: 'San Mateo',
+  pickupState: 'CA',
+  pickupZip: '94403',
+
+  returnDate: '2018-04-30',
+  returnAddress1: '3555 S El Camino Real',
+  returnAddress2: '',
+  returnCity: 'San Mateo',
+  returnState: 'CA',
+  returnZip: '94403',
+};

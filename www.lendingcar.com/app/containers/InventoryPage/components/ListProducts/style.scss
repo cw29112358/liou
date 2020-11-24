@@ -1,0 +1,13 @@
+@import '~scss_vars';
+
+.empty-div {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .empty {
+    text-align: center;
+    font-size: 50px;
+    color: $gray-light;
+  }
+}

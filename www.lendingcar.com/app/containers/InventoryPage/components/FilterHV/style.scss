@@ -1,0 +1,7 @@
+@import '~scss_vars';
+.filter-row ul li.active a, .filter-row ul li.active span {
+    color: $brand-color;
+    font-weight: bold;
+    display: block;
+    font-weight: 300;
+}

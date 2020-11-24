@@ -1,0 +1,25 @@
+@import "~scss_vars";
+
+.loader-global {
+  position: fixed;
+  top: 0;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  opacity: 0.6;
+  background-color: $gray-light;
+
+  .loader-text {
+    color: $brand-color;
+    text-align: center;
+    margin-top: -40px;
+  }
+  .loader-img-hide {
+    display: none;
+  }
+}

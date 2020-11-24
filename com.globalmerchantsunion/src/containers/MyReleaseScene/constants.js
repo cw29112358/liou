@@ -1,0 +1,5 @@
+
+export const RELEASE_ACTIVITIES = 'src/MyReleaseScene/RELEASE_ACTIVITIES';
+export const RELEASE_ACTIVITIES_SUCCESS = 'src/MyReleaseScene/RELEASE_ACTIVITIES_SUCCESS';
+export const RELEASE_ACTIVITIES_FAIL = 'src/MyReleaseScene/RELEASE_ACTIVITIES_FAIL';
+export const SAVE_UPLOAD_FILE_FIELD = 'src/MyReleaseScene/SAVE_UPLOAD_FILE_FIELD';

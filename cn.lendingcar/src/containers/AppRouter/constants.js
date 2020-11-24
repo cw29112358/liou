@@ -1,0 +1,61 @@
+/*
+ *
+ * AppRouter constants
+ *
+ */
+
+export const USER_LOGIN = 'src/AppRouter/USER_LOGIN';
+export const USER_LOGIN_SUCCESS = 'src/AppRouter/USER_LOGIN_SUCCESS';
+export const USER_LOGIN_FAIL = 'src/AppRouter/USER_LOGIN_FAIL';
+export const USER_LOGIN_JWTTOKEN = 'src/AppRouter/USER_LOGIN_JWTTOKEN';
+
+export const USER_UPDATE_MEMBERSHIP = 'src/AppRouter/USER_UPDATE_MEMBERSHIP';
+export const USER_UPDATE_MEMBERSHIP_SUCCESS = 'src/AppRouter/USER_UPDATE_MEMBERSHIP_SUCCESS';
+
+export const SAVE_NOTIFICATION_TOKEN = 'src/AppRouter/SAVE_NOTIFICATION_TOKEN';
+
+export const USER_LOGOUT = 'src/AppRouter/USER_LOGOUT';
+export const USER_LOGOUT_SUCCESS = 'src/AppRouter/USER_LOGOUT_SUCCESS';
+export const USER_LOGOUT_FAIL = 'src/AppRouter/USER_LOGOUT_FAIL';
+
+export const SEND_VERIFICATION_CODE = 'src/AppRouter/SEND_VERIFICATION_CODE';
+export const SEND_VERIFICATION_CODE_SUCCESS = 'src/AppRouter/SEND_VERIFICATION_CODE_SUCCESS';
+export const SEND_VERIFICATION_CODE_FAIL = 'src/AppRouter/SEND_VERIFICATION_CODE_FAIL';
+
+export const DELETE_VERIFICATION_CODE_INFO = 'src/AppRouter/DELETE_VERIFICATION_CODE_INFO';
+
+export const VERIFY_VERIFICATION_CODE = 'src/AppRouter/VERIFY_VERIFICATION_CODE';
+export const VERIFY_VERIFICATION_CODE_SUCCESS = 'src/AppRouter/VERIFY_VERIFICATION_CODE_SUCCESS';
+export const VERIFY_VERIFICATION_CODE_FAIL = 'src/AppRouter/VERIFY_VERIFICATION_CODE_FAIL';
+
+export const USER_SIGNUP = 'src/AppRouter/USER_SIGNUP';
+export const USER_SIGNUP_SUCCESS = 'src/AppRouter/USER_SIGNUP_SUCCESS';
+export const USER_SIGNUP_FAIL = 'src/AppRouter/USER_SIGNUP_FAIL';
+
+export const RESET_PASSWORD = 'src/AppRouter/RESET_PASSWORD';
+export const RESET_PASSWORD_SUCCESS = 'src/AppRouter/RESET_PASSWORD_SUCCESS';
+export const RESET_PASSWORD_FAIL = 'src/AppRouter/RESET_PASSWORD_FAIL';
+
+export const CHANGE_PASSWORD = 'src/AppRouter/CHANGE_PASSWORD';
+export const CHANGE_PASSWORD_SUCCESS = 'src/AppRouter/CHANGE_PASSWORD_SUCCESS';
+export const CHANGE_PASSWORD_FAIL = 'src/AppRouter/CHANGE_PASSWORD_FAIL';
+
+export const LOAD_FORM = 'src/AppRouter/LOAD_FORM';
+export const LOAD_FORM_SUCCESS = 'src/AppRouter/LOAD_FORM_SUCCESS';
+export const LOAD_FORM_FAIL = 'src/AppRouter/LOAD_FORM_FAIL';
+
+export const UPDATE_FORM = 'src/AppRouter/UPDATE_FORM';
+export const UPDATE_FORM_SUCCESS = 'src/AppRouter/UPDATE_FORM_SUCCESS';
+export const UPDATE_FORM_FAIL = 'src/AppRouter/UPDATE_FORM_FAIL';
+
+export const UPLOAD_REF_FILE = 'src/AppRouter/UPLOAD_REF_FILE';
+export const UPLOAD_REF_FILE_SUCCESS = 'src/AppRouter/UPLOAD_REF_FILE_SUCCESS';
+export const UPLOAD_REF_FILE_FAIL = 'src/AppRouter/UPLOAD_REF_FILE_FAIL';
+
+export const GET_FAVOURITE_CAR = 'src/AppRouter/GET_FAVOURITE_CAR';
+export const GET_FAVOURITE_CAR_SUCCESS = 'src/AppRouter/GET_FAVOURITE_CAR_SUCCESS';
+export const GET_FAVOURITE_CAR_FAIL = 'src/AppRouter/GET_FAVOURITE_CAR_FAIL';
+
+export const UPDATE_FAVOURITE_CAR = 'src/AppRouter/UPDATE_FAVOURITE_CAR';
+export const UPDATE_FAVOURITE_CAR_SUCCESS = 'src/AppRouter/UPDATE_FAVOURITE_CAR_SUCCESS';
+export const UPDATE_FAVOURITE_CAR_FAIL = 'src/AppRouter/UPDATE_FAVOURITE_CAR_FAIL';

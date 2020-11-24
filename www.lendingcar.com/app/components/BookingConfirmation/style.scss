@@ -1,0 +1,177 @@
+@import '~scss_vars';
+
+.booking-confirmation-div {
+  width: 100%;
+  background-color: #fafafa;
+}
+.confirmation-title{
+  text-align: center;
+  margin-top: 20px;
+}
+.confirmation-check{
+  display: flex;
+  justify-content: center;
+  font-Size: 64px;
+  color: $brand-color;
+}
+.section-confirmation {
+  align-self: center;
+  margin-bottom: -100px;
+}
+.agreement-section {
+  text-align: center;
+  // margin-bottom: 30px;
+  font-size: 15px;
+  // color: $brand-color;
+  margin: 10px;
+}
+.lease-agreement-text{
+  color: $brand-color;
+}
+.fbIcon {
+  font-Size: 24px;
+  color: $brand-color;
+}
+.facebook-note {
+  text-align: center;
+  margin: 3px;
+  color: $brand-color;
+}
+.confirmation-card-div {
+  width: 100%;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  div {
+    div {
+      padding-right: 0px;
+    }
+  }
+}
+.card-container {
+  -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+      -o-perspective: 600px;
+         perspective: 600px;
+         margin-bottom:30px;
+}
+.card {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-radius: 10px;
+  color: #444444;
+  height: 280px;
+  width: 100%;
+  position: relative;
+}
+.card-container, .front{
+  width: 100%;
+  border-radius: 4px;
+}
+.card .content{
+  background-color: rgba(0 , 0 , 0, 0);
+  box-shadow: none;
+  padding: 10px 0px 0px;
+}
+.card .name {
+  font-size: 18px;
+  text-align: center;
+  text-transform: capitalize;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+.card .note{
+  font-size: 16px;
+  text-align: center;
+  text-transform: capitalize;
+  padding-top: 10px;
+}
+.card h3{
+  margin: 5px 0;
+  font-weight: 400;
+  line-height: 20px;
+}
+.card-footer{
+  background-color: $brand-color;
+}
+.card .card-footer{
+  border-top: 1px solid #EEEEEE;
+  padding: 10px 0;
+  border-radius: 0px;
+  text-align: center;
+  position: absolute;
+  width: 90%;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.card .card-footer .social-links{
+  font-size: 14px;
+  margin: 0;
+}
+.card .card-footer .social-links a{
+  color: white;
+  margin: 0;
+}
+.card .card-footer a{
+  color: white;
+}
+.card .card-footer a:hover{
+  color: white;
+}
+.card .card-footer .btn-simple{
+  margin-top: -6px;
+}
+.card .card-title {
+  padding-top:15px;
+  color: #506A85;
+  text-align: center;
+  font-weight: 280;
+  font-size: 14px;
+}
+.card-title h6{
+  background: #cccccc;
+  border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin-right: 5px;
+  text-align: center;
+  width: 1.6em;
+}
+.card h6{
+  padding-top: 2px;
+  text-align: center;
+  text-transform:capitalize;
+}
+.title small {
+  color: #999;
+  font-size: 17px;
+  text-transform: uppercase;
+  margin:0;
+}
+.section-social-links {
+  text-align: center;
+  // margin-bottom: -4px;
+}
+.section-social-links .social-note{
+  margin-top: -15px;
+  color: $brand-color;
+}
+.social-note{
+  text-align:center;
+  margin: 3px;
+}
+.social-icons {
+  font-size: 22px;
+  color: $brand-color;
+}
+.list-inline {
+  text-align : center;
+}
+.login-reminder {
+  font-size: 20px;
+  text-align: center;
+  margin: 12px;
+}

@@ -1,0 +1,12 @@
+@import '~scss_vars';
+
+.footer {
+  padding-top: 20px;
+  height: 60px;
+  background-color: $background-white3;
+  color: $text-black2;
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+  }
+}

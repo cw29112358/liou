@@ -1,0 +1,78 @@
+/*
+ *
+ * {{properCase name }}
+ *
+ */
+
+import React from 'react';
+// import PropTypes from 'prop-types';
+import { injectIntl, intlShape } from 'react-intl';
+import { connect } from 'react-redux';
+{{#if wantHeaders}}
+import Helmet from 'react-helmet';
+{{/if}}
+{{#if wantActionsAndReducer}}
+import { createPropsSelector } from 'reselect-immutable-helpers';
+{{/if}}
+
+{{#if wantMessages}}
+import TranslatedMessage, { formatMessage } from 'components/TranslatedMessage';
+import messages from './messages';
+{{/if}}
+{{#if wantActionsAndReducer}}
+import select{{properCase name}} from './selectors';
+{{/if}}
+import './style.scss';
+
+export class {{ properCase name }} extends React.{{{ component }}} { // eslint-disable-line react/prefer-stateless-function
+  render() {
+    {{#if wantMessages}}
+    const { intl } = this.props;
+
+    {{/if}}
+    return (
+      <div className="{{ kebabCase name }}">
+        {{#if wantHeaders}}
+        <Helmet
+          title="{{ camelCase name }}"
+          {{#if wantMessages}}
+          title={formatMessage(intl, messages, '{{ camelCase name }}')}
+          {{/if}}
+          meta={{curly true}}[
+            {{curly true}} name: 'description', content: 'Description of {{properCase name}}' {{curly}},
+          ]{{curly}}
+        />
+        {{/if}}
+
+        <div className="container page-container">
+          {{#if wantMessages}}
+          <TranslatedMessage messages={messages} messageId="header" />
+          {{/if}}
+        </div>
+      </div>
+    );
+  }
+}
+
+{{ properCase name }}.propTypes = {
+  // dispatch: PropTypes.func.isRequired,
+  intl: intlShape.isRequired,
+};
+
+{{#if wantActionsAndReducer}}
+const mapStateToProps = createPropsSelector({
+  {{ camelCase name }}: select{{ properCase name }},
+});
+{{/if}}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    dispatch,
+  };
+}
+
+{{#if wantActionsAndReducer}}
+export default injectIntl(connect(mapStateToProps, mapDispatchToProps)({{ properCase name }}));
+{{else}}
+export default injectIntl(connect(null, mapDispatchToProps)({{ properCase name }}));
+{{/if}}

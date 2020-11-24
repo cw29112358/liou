@@ -1,0 +1,145 @@
+@import "~scss_vars";
+
+.landing-compare {
+
+  .modal-content {
+    padding-top: 24px;
+  }
+  .modal-body {
+    padding-bottom: 27px;
+  }
+  .modal-header {
+    position: relative;
+    border-bottom: 0;
+    padding: 30px 0 30px;
+    height: 92px;
+    .close {
+      font-size: 30px;
+      margin: -40px 10px 0 0;
+    }
+  }
+
+  .compare-title {
+    padding: 0 13px;
+    min-width: 200px;
+    font-size: 24px;
+    line-height: 32px;
+    color: $text-blue-dark;
+    text-align: center;
+    .small-circle {
+      display: inline-block;
+      vertical-align: top;
+      width: 5px;
+      height: 5px;
+      background-color: $brand-color;
+      border-radius: 50%;
+    }
+    .small-circle-left {
+      left: 0;
+    }
+    .small-circle-right {
+      left:  auto;
+      right: -5px;
+    }
+  }
+
+  .compare-head {
+    position: relative;
+    margin-bottom: 35px;
+    width: 600px;
+    height: 60px;
+    font-size: 24px;
+    line-height: 32px;
+    color: $text-white2;
+    border-radius: 100px;
+    background-image: linear-gradient(-60deg, $background-blue-dark 0%, $background-blue-dark 50%,
+      $brand-color 50%, $brand-color 100%);
+    .compare-vs {
+      font-style: italic;
+      font-size: 28px;
+    }
+    .compare-head-title {
+      box-sizing: border-box;
+      width: 50%;
+      padding: 12px 0 16px;
+      text-align: center;
+      border-radius: 100px;
+    }
+    .compare-head-left {
+      // border-radius: 100px 100px 0 100px;
+      // border-radius: 0 0 0 100px;
+      // box-shadow:  -3px 6px 5px 1px $brand-color;
+    }
+    .compare-head-right {
+      // border-radius: 100px 100px 100px 0;
+      // box-shadow:  0px 6px 5px 1px $background-blue-dark;
+      // box-shadow: 5px 10px 3px 3px $background-blue-dark;
+    }
+  }
+
+  .compare-item {
+    margin-bottom: 25px;
+  }
+  .compare-item-left {
+    text-align: right;
+  }
+  .compare-item-right {
+    text-align: left;
+    .item-title {
+      color: $text-blue-dark;
+    }
+  }
+  .item-title {
+    margin-bottom: 7px;
+    font-size: 18px;
+    line-height: 32px;
+    color: $brand-color;
+  }
+  .item-text {
+    font-size: 16px;
+    line-height: 24px;
+    color: $text-blue-dark;
+  }
+
+  @media (max-width: 768px){
+    .compare-title {
+      font-size: 22px;
+    }
+    .compare-head {
+      font-size: 18px;
+      .compare-vs {
+        font-size: 24px;
+      }
+    }
+    .compare-item {
+      margin-bottom: 10px;
+    }
+    .item-title {
+      font-size: 16px;
+      white-space: nowrap;
+    }
+    .item-text {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 420px) {
+    .modal-content {
+      max-width: 700px;
+    }
+    .modal-dialog {
+      margin-top: 30px;
+    }
+  }
+  @media (min-width: 768px) {
+    .modal-dialog {
+        width: 700px;
+    }
+  }
+  @media (min-height: 900px) {
+    .modal-dialog {
+        margin-top: 100px;
+    }
+  }
+
+
+}

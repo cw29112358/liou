@@ -1,0 +1,277 @@
+@import '~scss_vars';
+
+.car-detail{
+  .feature-info {
+    min-width: 300px;
+    text-align: left;
+  }
+  .details-description-left {
+    width: 40%;
+    text-align: left;
+  }
+  .details-description-right {
+    width: 20%;
+    text-align: right;
+    white-space: nowrap;
+  }
+  .btn-primary {
+    background-color: $brand-color;
+  }
+  .contact-us-color {
+    color: $brand-color;
+  }
+  .leasing-label {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    background-color: $gray-dark3;
+    color: $white;
+    padding: 15px;
+  }
+  .car-title-left {
+    text-align: left;
+    margin-bottom: 0;
+    .car-title-color {
+      color: $brand-color;
+    }
+  }
+  .car-title-right-div {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin-bottom: .5em;
+  }
+  .car-title-right {
+    text-align: right;
+    line-height: 40px;
+    font-size: 22px;
+    margin-bottom: 0;
+    color: $brand-color;
+    margin-top: 16px;
+  }
+  .make-row {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+  .title-unit {
+    font-size: 22px;
+  }
+  .card-title-unit {
+    font-size: 14px;
+  }
+  .unit-day {
+    color: $text-black;
+    letter-spacing: 0;
+  }
+  .left-div {
+    padding-top: 10px;
+    text-align: center;
+  }
+  .right-div {
+    float: center;
+    padding-top: 10px;
+    text-align: center;
+    max-width: 400px;
+  }
+  .carimg-div {
+    margin: auto;
+    .slick-slide {
+      padding: 0 2px;
+      background-color: transparent;
+    }
+  }
+  .carimg-dynamic {
+    img {
+      margin: -30px 0;
+    }
+  }
+  .slick-next:before, .slick-prev:before {
+    color: $gray-dark3;
+  }
+  .get-it-now {
+    .btn-primary {
+      border-radius: 4px;
+      box-shadow: 0 0 5px $brand-color;
+    }
+  }
+  .info-title {
+    // width: 87%;
+    margin: 20px auto;
+  }
+  .info-row {
+    // width: 87%;
+    padding: 10px;
+    margin: auto;
+    height: auto;
+  }
+  .info-row-colorF {
+    background-color: $border-white-blue2;
+  }
+  .nav-button {
+    color: $text-gray;
+    margin: 10px 15px;
+    padding-bottom: 10px;
+  }
+  .active-nav {
+    color: $text-gray;
+    margin: 10px 15px;
+    border-bottom: 5px solid $brand-color;
+    padding-bottom: 10px;
+  }
+  .point {
+    font-size: 90px;
+    color: $brand-color;
+    line-height: 27px;
+    margin-bottom: 0;
+  }
+  .point-left {
+    margin-right: 10px;
+  }
+  .point-right {
+    margin-left: 10px;
+  }
+  .recommend-title {
+    display: inline-flex;
+    border-bottom: 1px solid $border-white-blue;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    margin-top: 90px;
+    padding-bottom: 20px;
+    margin-bottom: 35px;
+  }
+  .recommend-div {
+    text-align: center;
+    margin: auto;
+  }
+  .faq-title {
+    display: inline-flex;
+    // border-bottom: 1px solid $border-white-blue;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    margin-top: 90px;
+    padding-bottom: 20px;
+    margin-bottom: 35px;
+  }
+
+  .price-div {
+    display: inline-flex;
+    text-align: right;
+    align-items: center;
+  }
+  .price {
+  	font-size: 18px;
+  	font-weight: normal;
+  	font-stretch: normal;
+  	line-height: 14px;
+  	letter-spacing: 0px;
+  	color: $text-blue-dark;
+  }
+  .card-info-left {
+    text-align: left;
+  }
+  .card-info-title {
+  	font-size: 18px;
+  	font-weight: normal;
+  	font-stretch: normal;
+  	letter-spacing: 0px;
+  	color: $text-blue-dark;
+  }
+  .card-info-automatic {
+  	font-size: 14px;
+  	font-weight: normal;
+  	font-stretch: normal;
+  	line-height: 14px;
+  	letter-spacing: 0px;
+  	color: $text-gray4;
+    margin-left: 7px;
+  }
+  .card-info-year {
+    border-radius: 3px;
+  	border: solid 1px $brand-color;
+    padding: 0 5px;
+  	font-size: 14px;
+  	font-weight: normal;
+  	font-stretch: normal;
+  	line-height: 14px;
+  	letter-spacing: 0px;
+  	color: $brand-color;
+  }
+  .recommend-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .ant-card-body {
+    padding: 24px 8px;
+  }
+
+  .get-it-now .disabled {
+    background-color: $background-gray;
+    box-shadow: unset;
+  }
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .col-md-7 {
+      margin-left: 0;
+    }
+    .col-md-4 {
+      width: 40%;
+      .btn-primary {
+        padding: 15px 20px;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .details-description-right {
+      width: 40%;
+    }
+
+    .car-title-left {
+      font-size: 19px;
+    }
+    .car-title-right {
+      font-size: 18px;
+    }
+    .car-title-right-div {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .recommend-row {
+      display: block;
+    }
+    .recommend-title {
+      margin-top: 20px;
+      margin-bottom: 0;
+      border-bottom: 0;
+    }
+    .ant-card  {
+      padding-top: 8px;
+      background-color: transparent;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+    .card-info-title {
+      font-size: 14px;
+    }
+    .card-info-year {
+      border: 0;
+      padding: 0;
+      font-size: 12px;
+    }
+    .card-info-automatic {
+      font-size: 12px;
+    }
+    .title-unit {
+      font-size: 17px;
+    }
+
+
+  }
+}

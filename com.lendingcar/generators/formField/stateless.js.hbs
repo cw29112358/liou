@@ -1,0 +1,87 @@
+/**
+*
+* {{ properCase name }}
+*
+*/
+{{#if wantTransLate}}
+
+/* global translate */
+{{/if}}
+
+import React from 'react';
+import PropTypes from 'prop-types';
+import {
+  Item,
+  Input,
+  Label,
+} from 'native-base';
+
+import styles from 'formFields/styles';
+
+const {{ properCase name }} = (props) => {
+  const {
+    input, placeholder, label, hasLabel,
+    secureTextEntry,
+    layout, itemSettings, itemstyle, labelStyle,
+    firstErrorFieldKey, onClearFirstErrorFieldKey,
+  } = props;
+
+  const itemLayout = [itemstyle];
+  const labelVertical = [labelStyle];
+  if (layout === 'vertical') {
+    itemLayout.push(styles.fieldVertical);
+    labelVertical.push(styles.labelVertical);
+  }
+  if (firstErrorFieldKey === input.name) itemLayout.push(styles.error);
+
+  const labelText = label || input.name;
+  const placeholderText = (itemSettings && itemSettings.floatingLabel === true)
+    ? null : {{#if wantTransLate}}translate(placeholder){{else}}placeholder{{/if}};
+
+  return (
+    <Item {...itemSettings} style={itemLayout}>
+      {hasLabel && <Label style={labelVertical}>{{#if wantTransLate}}{translate(labelText)}{{else}}{labelText}{{/if}}</Label>}
+      <Input
+        placeholder={placeholderText}
+        onChangeText={input.onChange}
+        onFocus={() => onClearFirstErrorFieldKey(input.name)}
+        secureTextEntry={secureTextEntry}
+        defaultValue={input.value}
+      />
+    </Item>
+  );
+};
+
+{{ properCase name }}.defaultProps = {
+  input: {
+    value: false,
+    onChange: () => null,
+  },
+  placeholder: '',
+  label: '',
+  layout: '',
+  itemSettings: {},
+  secureTextEntry: false,
+  itemstyle: {},
+  labelStyle: {},
+  hasLabel: false,
+};
+
+{{ properCase name }}.propTypes = {
+  input: PropTypes.shape({
+    value: PropTypes.any,
+    onChange: PropTypes.func,
+  }),
+  placeholder: PropTypes.string,
+  label: PropTypes.string,
+  layout: PropTypes.string,
+  itemSettings: PropTypes.object,
+  secureTextEntry: PropTypes.bool,
+  itemstyle: PropTypes.object,
+  labelStyle: PropTypes.object,
+  hasLabel: PropTypes.bool,
+  firstErrorFieldKey: PropTypes.string.isRequired,
+  onClearFirstErrorFieldKey: PropTypes.func.isRequired,
+};
+
+export default {{ properCase name }};

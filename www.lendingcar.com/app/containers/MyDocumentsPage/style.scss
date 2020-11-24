@@ -1,0 +1,32 @@
+@import '~scss_vars';
+
+#intercom-container {
+  display: none;
+}
+
+.change-password {
+  .jumbotron {
+    background-color: $white;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .m-t {
+    margin-top: 0;
+  }
+  .form-control {
+    border-width: 1px;
+  }
+
+  @media (max-width: 768px) {
+    .page-container {
+      padding-bottom: 0;
+      min-height: auto;
+    }
+    .form-div {
+      min-height: auto;
+    }
+    .btn-primary {
+      margin: 10px 0;
+    }
+  }
+}

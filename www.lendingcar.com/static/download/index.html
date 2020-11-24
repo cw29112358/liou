@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lending Car</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+      background: url('../download-bg.png') #1C1C38 no-repeat center;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .container {
+      display: none
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <center>微信用户请通过右上角的“Open in Safari”来访问。</center>
+  </div>
+</body>
+
+</html>
+
+<script>
+  /*
+   * 请在这里填写下载 URL
+   */
+  var url_ios = "https://itunes.apple.com/us/app/lendingcar/id1252261765?mt=8";
+  var url_andorid = "https://play.google.com/store/apps/details?id=com.oc.lendingcar";
+  var url_pc = url_ios;
+
+  function getMobileOperatingSystem() {
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i) || userAgent.match(/iPod/i)) {
+      console.log('iOS');
+      window.location.href = url_ios;
+      return 'iOS';
+    } else if (userAgent.match(/Android/i)) {
+      console.log('andorid');
+      window.location.href = url_andorid;
+      return 'Android';
+    } else {
+      console.log('pc');
+      window.location.href = url_pc;
+      return 'PC';
+    }
+  }
+  document.getElementById("result").innerHTML = getMobileOperatingSystem();
+</script>
+<script>
+  (function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-99216597-1', 'auto');
+  ga('send', 'pageview');
+</script>

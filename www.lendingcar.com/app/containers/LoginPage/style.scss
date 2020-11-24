@@ -1,0 +1,165 @@
+@import '~scss_vars';
+#intercom-container {
+  display: none;
+}
+
+.login-page-lc {
+  position: relative;
+  padding-top: 70px;
+  .ant-tabs {
+    height: 100%;
+    width: 63%;
+    padding: 20px 50px;
+    background-color: $white;
+  }
+  .ant-tabs-nav {
+    .ant-tabs-tab-active {
+      color: $brand-color;
+    }
+    .ant-tabs-tab:hover {
+      color: $brand-color;
+    }
+  }
+  .ant-tabs-ink-bar {
+    background-color: $brand-color;
+  }
+  .ant-tabs-bar {
+    border-width: 0;
+  }
+  .ant-btn {
+    margin-top: 3%;
+    margin-bottom: 20%;
+    border-color: $button-green;
+    width: 100%;
+    height: 53px;
+    font-size: 19px;
+    color: $white;
+    background-color: $button-green;
+    &:hover,
+    &:focus {
+      border-color: $brand-color;
+      color: $white;
+      background-color: $brand-color;
+    }
+  }
+  .login-div {
+    z-index: 800;
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-image: -webkit-linear-gradient(45deg, $background-green2 , $background-green3); /* Safari 5.1 - 6.0 */
+    background-image: -o-linear-gradient(45deg, $background-green2 , $background-green3); /* Opera 11.1 - 12.0 */
+    background-image: -moz-linear-gradient(45deg, $background-green2 , $background-green3); /* Firefox 3.6 - 15 */
+    background-image: linear-gradient(45deg, $background-green2 , $background-green3); /* 标准的语法 */
+    opacity: 0.8;
+  }
+  .title {
+    margin-bottom: 50px;
+    color: $white;
+  }
+  .body-div {
+    margin: auto;
+    width: 75%;
+    overflow: hidden;
+    padding: 0 5%;
+    .body-div-background {
+      height: 100%;
+      background-color: $white;
+      background-image: url('./login.jpg');
+      background-size: contain;
+      -moz-background-size: auto;
+    }
+  }
+  .prompt-text {
+    margin-bottom: 16%;
+    font-weight: 400;
+    font-size: 13px;
+    .link-color {
+      color: $brand-color;
+    }
+  }
+  .reset-div {
+    height: 100%;
+    width: 63%;
+    padding: 30px 50px 70px;
+    background-color: $white;
+    .reset-label {
+      margin-top: 10%;
+      font-weight: 400;
+      font-size: 19px;
+    }
+    .btn-default {
+      background-color: $white;
+      padding: 0;
+      color: $brand-color;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1200px) {
+    padding-top: 50px;
+    .login-div {
+      padding-bottom: 0;
+      height: 100vh;
+      position: relative;
+    }
+    .body-div {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 80%;
+      width: 80%;
+    }
+    .title {
+      font-size: 25px;
+    }
+    .reset-div {
+      margin-top: 0px;
+      height: 100%;
+    }
+    .m-t {
+      margin: 0;
+    }
+  }
+  @media (max-width: 767px) {
+    padding-top: 50px;
+    .body-div {
+      width: 100%;
+      min-width: 300px;
+      padding: 0 20px;
+    }
+    .ant-tabs {
+      width: 100%;
+      padding: 25px;
+    }
+    .prompt-text {
+      margin-bottom: 5%;
+      font-size: 10px;
+    }
+    .reset-div {
+      width: 100%;
+      padding: 25px;
+
+      .reset-label {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media (max-height: 900px) {
+    .login-div {
+      padding: 30px 0;
+    }
+    .title {
+      margin-bottom: 30px;
+      display: none;
+    }
+    .m-t {
+      margin-top: 6%;
+    }
+    .form-group {
+      margin-bottom: -15px;
+    }
+  }
+
+}

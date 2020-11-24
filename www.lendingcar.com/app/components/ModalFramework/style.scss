@@ -1,0 +1,30 @@
+// @import '~scss_mixins';
+@import '~scss_vars';
+.ant-modal-mask, .ant-modal-wrap {
+  z-index: 10002;
+}
+.ant-modal {
+  position: relative;
+  width: 820px !important;
+  .ant-modal-header {
+    display: none;
+  }
+  .ant-modal-body {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .ant-modal-footer {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    // <= md
+    top: 50px;
+    margin: 0;
+    width: 100% !important;
+    .ant-modal-body {
+      width: 100%;
+    }
+  }
+
+}

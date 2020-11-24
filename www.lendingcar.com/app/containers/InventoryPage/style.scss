@@ -1,0 +1,93 @@
+@import '~scss_vars';
+#intercom-container {
+  display: none;
+}
+
+.inventory-page {
+  .rotate-icon {
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+  .total-count-box {
+    height: 60px;
+    padding: 10px;
+    background-color: $background-white5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 1px solid $border-white-blue;
+    border-right: 1px solid $border-white-blue;
+  }
+  .total-count {
+    font-size: 18px;
+    margin-right: 3px;
+  }
+
+  .sorting-options-box {
+    background-color: $background-white4;
+    border-top: 1px solid $border-white-blue;
+    border-left: 1px solid $border-white-blue;
+    border-right: 1px solid $border-white-blue;
+  }
+  .col-sm-9 {
+    width: 100%;
+  }
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .total-count-box {}
+    .total-count {
+      font-size: 16px;
+      margin-right: 3px;
+    }
+  }
+  @media (max-width: 768px) {
+    .total-count-box {
+      height: 60px;
+      padding: 10px;
+      background-color: $white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+      border-left: 1px solid $border-white-blue;
+      border-right: 1px solid $border-white-blue;
+      border-bottom: 1px solid $border-white-blue;
+    }
+    .total-count {
+      font-size: 14px;
+      margin-right: 3px;
+    }
+  }
+
+  .ant-switch-checked {
+    background-color: $brand-color;
+  }
+
+  .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active {
+    color: $brand-color;
+  }
+  .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab:hover {
+    color: $brand-color;
+  }
+  .ant-tabs-bar {
+    margin: 0;
+  }
+  .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
+    margin-right: 0;
+    border-radius: 0;
+    border-left: 0;
+    border-top: 0;
+    padding-top: 1px;
+  }
+  .ant-tabs-nav .ant-tabs-tab-active {
+    font-weight: normal;
+  }
+  .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    background-color: $brand-color;
+    border-color: $brand-color;
+    color: $white;
+  }
+  .pagination > li > a, .pagination > li > span {
+    color: $brand-color;
+  }
+}

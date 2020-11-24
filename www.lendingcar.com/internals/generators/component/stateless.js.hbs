@@ -1,0 +1,30 @@
+/**
+*
+* {{ properCase name }} stateless function
+*
+*/
+
+import React from 'react';
+// import PropTypes from 'prop-types';
+
+{{#if wantMessages}}
+import TranslatedMessage from 'components/TranslatedMessage';
+import messages from './messages';
+{{/if}}
+import './style.scss';
+
+function {{ properCase name }}() {
+  return (
+    <div className="{{ kebabCase name }}">
+    {{#if wantMessages}}
+      <TranslatedMessage messages={messages} messageId="header" />
+    {{/if}}
+    </div>
+  );
+}
+
+{{ properCase name }}.propTypes = {
+
+};
+
+export default {{ properCase name }};

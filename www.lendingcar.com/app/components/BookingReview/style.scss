@@ -1,0 +1,12 @@
+@import '~scss_vars';
+
+.booking-confirm-form {
+  .contract-arrow {
+  display: flex;
+  align-items: center;
+  }
+  .prompt {
+    text-align: center;
+    padding: 10px 15px;
+  }
+}

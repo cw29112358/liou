@@ -1,0 +1,1196 @@
+@import "~scss_vars";
+
+.noGutter {
+margin-left:0;
+margin-right:0;
+padding-left:0;
+padding-right:0;
+}
+.category-box {
+  position: relative;
+  cursor: pointer;
+  .car-img {
+    margin: 0 auto;
+    width: 320px;
+    height: 240px;
+    .mask-watermark {
+      background-color: $background-blue-grey;
+    }
+  }
+  // .category-text {
+  //   z-index: 100;
+  //   position: absolute;
+  //   bottom: 0px;
+  //   width: 320px !important;
+  // }
+}
+.marginTop {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.marginBottom {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.bgOCgreen {
+  background-color: $brand-color;
+}
+
+.summaryUpper {
+  font-size: 15px;
+  margin-top: 5px;
+  color: $white;
+}
+
+.summaryLower {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: $white;
+}
+
+.divSectionDivRow {
+font-size: 20px;
+ color: $black;
+}
+
+.divCircle {
+  margin-top: -80px;
+}
+
+.vsCircle {
+  font-size: 250px;
+  margin-top: -150px;
+  margin-bottom: -10px;
+  padding: 0;
+  color: $white;
+}
+
+.vsLetters {
+color: $black;
+font-size: 100px;
+margin-left: -5%;
+margin-top: -170px;
+}
+
+.imgHeight {
+height:210px;
+}
+
+.collapseColor {
+  color: $gray-dark2;
+}
+
+.imgDescLeft {
+  margin-top: -40px;
+  margin-bottom: 10px;
+  margin-right: 70px;
+  font-size: 30px;
+  color: $brand-color;
+}
+
+.imgDescRight {
+  margin-top: -40px;
+  margin-bottom: 10px;
+  margin-left: 70px;
+  font-size: 30px;
+  color: $gray-light2;
+}
+
+.noMarginPadding {
+  margin: 0;
+   padding: 0;
+}
+
+.styleLineOne {
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom:5px;
+}
+
+.styleLineTwo {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.styleLineThree {
+
+}
+
+.middleFont {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.noShow {
+  display:none;
+}
+
+.divTrophy {
+  float: right;
+  background-color: $brand-color;
+  padding-left: 12px;
+  padding-right: 0;
+  padding-bottom: 2%;
+  margin-right: 25px;
+  margin-left: 0;
+  margin-bottom: -15%;
+  width: 50px;
+}
+
+.mainImgMsgTitle1 {
+color: $white;
+text-align: left;
+font-size: 25px;
+font-weight: bold;
+}
+
+.mainImgMsgTitle2 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.mainImgMsgTitle22 {
+  color: $brand-color-selected;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.mainImgMsgTitle1Zh {
+color: $black;
+text-align: left;
+font-size: 28px;
+}
+
+.mainImgMsgTitle2Zh {
+font-size: 38px;
+}
+
+.mainImgMsgTitle22Zh {
+ color: $brand-color-selected;
+ font-size: 38px;
+}
+
+.spaceH {
+  padding-top: 100px;
+  padding-bottom: 0px;
+  padding-left: 18%;
+  padding-right: 18%;
+}
+
+.mainImgCalc {
+  margin-top: -130px;
+  margin-bottom: -150px;
+}
+
+.calcJumbotron {
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 30px;
+}
+
+.calcJumbotronDiv {
+  padding-left: 50px;
+  padding-right: 30px;
+  padding-top: 20px;
+  .dropdown, button{
+    width: 100%;
+  }
+}
+
+.calcMsgTitle {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.calcMsgTitleH2 {
+  color: $brand-color;
+  font-size: 32px;
+}
+
+.calcMsgDesc {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.calcMsgDesc p {
+color: $brand-color;
+font-size: 16px;
+}
+
+.calcMarginBottom {
+  margin-bottom: 5px;
+}
+
+  .calcLabelLocation {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top:2px;
+  }
+
+
+  .calcLabelTerm {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top:2px;
+  }
+
+  .calcLabelCarType {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top:2px;
+  }
+
+  .calcLabelDL {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top:2px;
+  }
+
+.calcMsg {
+  text-align: left;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.calcMsg p {
+  font-size: 16px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.calcHr {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+
+  .calcFieldLocation {
+  font-size: 14px;
+  background-color: $white;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top:2px;
+  padding-bottom:2px;
+  border-radius:7px;
+  //margin-left:20px;
+  //width: 243px;
+  }
+
+  .calcFieldTerm {
+  font-size: 14px;
+  background-color: $white;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top:2px;
+  padding-bottom:2px;
+  border-radius:7px;
+  //margin-left:-18px;
+  //width: 222px;
+    &+ul>li>a{
+      padding: 4px 20px;
+    }
+  }
+
+  .calcFieldCarType {
+  font-size: 14px;
+  background-color: $white;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top:2px;
+  padding-bottom:2px;
+  border-radius:7px;
+  //margin-left:-17px;
+  //width: 242px;
+  }
+
+  .calcFieldDL {
+  font-size: 14px;
+  background-color: $white;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top:2px;
+  padding-bottom:2px;
+  border-radius:7px;
+  //margin-left:-17px;
+  //width: 200px;
+  }
+
+@media(max-width:1199px){
+  .divCircle {
+    margin-top: -53px;
+  }
+
+  .vsCircle {
+    font-size: 150px;
+    margin-top: -150px;
+    margin-bottom: -10px;
+    margin-left:-7%;
+    padding: 0;
+    color: $white;
+  }
+
+  .vsLetters {
+  color: $black;
+  font-size: 60px;
+  margin-left: -5%;
+  margin-top: -100px;
+  }
+
+  .imgHeight {
+  height:125px;
+  }
+
+  .imgDescLeft {
+    margin-top: -40px;
+    margin-bottom: 10px;
+    margin-right: 70px;
+    font-size: 18px;
+    color: $brand-color;
+  }
+
+  .imgDescRight {
+    margin-top: -40px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    font-size: 18px;
+    color: $gray-light2;
+  }
+
+  .styleLineOne {
+    font-size: 28px;
+    margin-top: 20px;
+        margin-bottom:5px;
+  }
+
+  .styleLineTwo {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+
+  .marginTop {
+    margin-top: 15px;
+    font-size: 15px;
+  }
+
+  .marginBottom {
+    margin-bottom: 15px;
+    font-size: 15px;
+  }
+
+  .middleFont {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .summaryUpper {
+    font-size: 12px;
+    margin-top: 5px;
+    color: $white;
+  }
+
+  .summaryLower {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: $white;
+  }
+
+  .divTrophy {
+    float: right;
+    background-color: $brand-color;
+    padding-left: 12px;
+    padding-right: 0;
+    padding-bottom: 2%;
+    margin-right: 15px;
+    margin-left: 0;
+    margin-bottom: -25%;
+    width: 50px;
+  }
+
+  .mainImgMsgTitle1 {
+  color: $white;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  }
+
+  .mainImgMsgTitle2 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .mainImgMsgTitle22 {
+    color: $brand-color-selected;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+
+  .mainImgMsgTitle1Zh {
+  color: $black;
+  text-align: left;
+  font-size: 20px;
+  }
+
+  .mainImgMsgTitle2Zh {
+  font-size: 30px;
+  }
+
+  .mainImgMsgTitle22Zh {
+   color: $brand-color-selected;
+   font-size: 30px;
+  }
+
+  .spaceH {
+    padding-top: 100px;
+    padding-bottom: 0px;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .mainImgCalc {
+    margin-top: -160px;
+    margin-bottom: -150px;
+    margin-left:40%;
+  }
+
+
+  .calcJumbotron {
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 30px;
+  }
+
+  .calcJumbotronDiv {
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 20px;
+  }
+
+  .calcMsgTitle {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .calcMsgTitleH2 {
+    color: $brand-color;
+    font-size: 32px;
+  }
+
+  .calcMsgDesc {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .calcMsgDesc p {
+  color: $brand-color;
+  font-size: 16px;
+  }
+
+  .calcMarginBottom {
+    margin-bottom: 5px;
+  }
+
+  .calcLabelLocation {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top:2px;
+    width:65px;
+  }
+
+
+  .calcLabelTerm {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top:2px;
+    //width:124px;
+  }
+
+  .calcLabelCarType {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top:2px;
+    //width:103px;
+  }
+
+  .calcLabelDL {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top:2px;
+    //width:146px;
+  }
+
+  .calcMsg {
+    text-align: left;
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .calcMsg p {
+    font-size: 16px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .calcHr {
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+
+  .calcFieldLocation {
+  font-size: 14px;
+  background-color: $white;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top:2px;
+  padding-bottom:2px;
+  border-radius:7px;
+  //margin-left:20px;
+  //width: 243px;
+  }
+
+  .calcFieldTerm {
+  font-size: 14px;
+  background-color: $white;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top:2px;
+  padding-bottom:2px;
+  border-radius:7px;
+  //margin-left:-18px;
+  //width: 222px;
+  }
+
+  .calcFieldCarType {
+  font-size: 14px;
+  background-color: $white;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top:2px;
+  padding-bottom:2px;
+  border-radius:7px;
+  //margin-left:-17px;
+  //width: 242px;
+  }
+
+  .calcFieldDL {
+  font-size: 14px;
+  background-color: $white;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top:2px;
+  padding-bottom:2px;
+  border-radius:7px;
+  //margin-left:-17px;
+  //width: 200px;
+  }
+
+}
+@media (min-width:768px) and (max-width: 1200px) {
+  .category-box {
+    .car-img {
+      width: auto;
+      margin: 0 10px;
+    }
+    .default-car-image {
+      width: 100%;
+    }
+  }
+}
+@media(max-width:767px){
+    .divCircle {
+      margin-top: -45px;
+
+    }
+
+    .vsCircle {
+      font-size: 92px;
+      margin-top: -100px;
+      margin-bottom: -10px;
+      margin-left:1%;
+      padding: 0;
+      color: $white;
+    }
+
+    .vsLetters {
+    color: $black;
+    font-size: 30px;
+    margin-left: -5%;
+    margin-top: -60px;
+    }
+
+    .imgHeight {
+    height:80px;
+
+    }
+
+    .imgDescLeft {
+      margin-top: -30px;
+      margin-bottom: 0px;
+      margin-right: 70px;
+      font-size: 12px;
+      color: $brand-color;
+    }
+
+    .imgDescRight {
+      margin-top: -30px;
+      margin-bottom: 0px;
+      margin-left: 70px;
+      font-size: 12px;
+      color: $gray-light2;
+    }
+
+    .styleLineOne {
+      font-size: 23px;
+      margin-top: 20px;
+    }
+
+    .styleLineTwo {
+      font-size: 7px;
+      margin-bottom: 5px;
+    }
+
+    .marginTop {
+      margin-top: 15px;
+      font-size: 12px;
+    }
+
+    .marginBottom {
+      margin-bottom: 15px;
+      font-size: 12px;
+    }
+
+    .middleFont {
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+
+    .summaryUpper {
+      font-size: 11px;
+      margin-top: 5px;
+      color: $white;
+    }
+
+    .summaryLower {
+      font-size: 25px;
+      margin-bottom: 20px;
+      color: $white;
+    }
+
+    .divTrophy {
+      float: right;
+      background-color: $brand-color;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 4%;
+      margin-right: 15px;
+      margin-left: 0;
+      margin-bottom: -30%;
+      width: 40px;
+    }
+
+      .mainImgMsgTitle1 {
+      color: $white;
+      text-align: left;
+      font-size: 20px;
+      font-weight: bold;
+      }
+
+      .mainImgMsgTitle2 {
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .mainImgMsgTitle22 {
+        color: $brand-color-selected;
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .mainImgMsgTitle1Zh {
+      color: $black;
+      text-align: left;
+      font-size: 18px;
+      }
+
+      .mainImgMsgTitle2Zh {
+      font-size: 28px;
+      }
+
+      .mainImgMsgTitle22Zh {
+       color: $brand-color-selected;
+       font-size: 28px;
+      }
+
+      .spaceH {
+        padding-top: 20px;
+        padding-bottom: 0px;
+        padding-left: 25%;
+        padding-right:1%;
+      }
+
+      .mainImgCalc {
+        margin-top: -5px;
+        margin-bottom: -150px;
+        margin-left:20%;
+      }
+
+
+      .calcJumbotron {
+        width: 100%;
+        padding-top: 8px;
+        padding-bottom: 30px;
+      }
+
+      .calcJumbotronDiv {
+        padding-left: 50px;
+        padding-right: 30px;
+        padding-top: 20px;
+      }
+
+      .calcMsgTitle {
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+
+      .calcMsgTitleH2 {
+        color: $brand-color;
+        font-size: 32px;
+      }
+
+      .calcMsgDesc {
+        padding-left: 0;
+        margin-bottom: 0;
+      }
+
+      .calcMsgDesc p {
+      color: $brand-color;
+      font-size: 16px;
+      }
+
+      .calcMarginBottom {
+        margin-bottom: 5px;
+      }
+
+
+        .calcLabelLocation {
+          font-size: 16px;
+          font-weight: bold;
+          margin-top:2px;
+          //width:65px;
+        }
+
+
+        .calcLabelTerm {
+          font-size: 16px;
+          font-weight: bold;
+          margin-top:2px;
+          //width:124px;
+        }
+
+        .calcLabelCarType {
+          font-size: 16px;
+          font-weight: bold;
+          margin-top:2px;
+          //width:103px;
+        }
+
+        .calcLabelDL {
+          font-size: 16px;
+          font-weight: bold;
+          margin-top:2px;
+          //width:146px;
+        }
+
+      .calcMsg {
+        text-align: left;
+        width: 100%;
+        margin-top: 5px;
+      }
+
+      .calcMsg p {
+        font-size: 16px;
+        margin-bottom: 0;
+        text-align: left;
+      }
+
+      .calcHr {
+        margin-top: 15px;
+        margin-bottom: 25px;
+      }
+
+
+        .calcFieldLocation {
+        font-size: 14px;
+        background-color: $white;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top:2px;
+        padding-bottom:2px;
+        border-radius:7px;
+        //margin-left:20px;
+        //width: 243px;
+        }
+
+        .calcFieldTerm {
+        font-size: 14px;
+        background-color: $white;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top:2px;
+        padding-bottom:2px;
+        border-radius:7px;
+        //margin-left:-18px;
+        //width: 222px;
+        }
+
+        .calcFieldCarType {
+        font-size: 14px;
+        background-color: $white;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top:2px;
+        padding-bottom:2px;
+        border-radius:7px;
+        //margin-left:-17px;
+        //width: 242px;
+        }
+
+        .calcFieldDL {
+        font-size: 14px;
+        background-color: $white;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top:2px;
+        padding-bottom:2px;
+        border-radius:7px;
+        //margin-left:-17px;
+        //width: 200px;
+        }
+        .car-img {
+          margin: 0 auto;
+        }
+        .category-text {
+          margin: 0 auto;
+        }
+}
+
+@media (max-width: 575px) {
+      .divCircle {
+        margin-top: -38px;
+
+      }
+
+      .vsCircle {
+        font-size: 70px;
+        margin-top: -100px;
+        margin-bottom: -10px;
+        margin-left:-22%;
+        padding: 0;
+        color: $white;
+      }
+
+      .vsLetters {
+      color: $black;
+      font-size: 25px;
+      margin-left: -1%;
+      margin-top: -45px;
+      }
+
+      .imgHeight {
+      height:60px;
+
+      }
+
+      .imgDescLeft {
+        margin-top: -43px;
+        margin-bottom: 0px;
+        margin-right: 70px;
+        color: $brand-color;
+      }
+
+      .imgDescLeftLineOne {
+        font-size: 8px;
+      }
+
+      .imgDescLeftLineTwo {
+        font-size: 12px;
+        margin-top: -10px;
+        margin-bottom: 0px;
+      }
+
+      .imgDescRight {
+        margin-top: -43px;
+        margin-bottom: 0px;
+        margin-left: 70px;
+        color: $gray-light2;
+      }
+
+      .imgDescRightLineOne {
+        font-size: 8px;
+      }
+
+      .imgDescRightLineTwo {
+        font-size: 12px;
+        margin-top: -10px;
+        margin-bottom: 0px;
+      }
+
+      .styleLineOne {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom:0;
+      }
+
+      .styleLineTwo {
+        font-size: 10px;
+        padding-top:0;
+        padding-bottom:0;
+        margin-top:0px;
+        margin-bottom: 0px;
+      }
+
+      .styleLineThree {
+        font-size: 10px;
+        padding-top:0;
+        padding-bottom:0;
+        margin-top:-12px;
+        margin-bottom: 4px;
+      }
+
+      .marginTop {
+        margin-top: 15px;
+        font-size: 8px;
+        font-weight:bold;
+      }
+
+      .marginBottom {
+        margin-bottom: 13px;
+        font-size: 8px;
+        font-weight:bold;
+      }
+
+      .middleFont {
+        font-size: 8px;
+        font-weight:bold;
+        margin-bottom: 2px;
+      }
+
+      .summaryUpper {
+        font-size: 10px;
+        margin-top: 10px;
+        color: $white;
+      }
+
+      .summaryLower {
+        font-size: 22px;
+        margin-bottom: 15px;
+        color: $white;
+      }
+
+
+      .divTrophy {
+        float: right;
+        background-color: $brand-color;
+        padding-left: 0px;
+        padding-right: 1px;
+        padding-bottom: 4%;
+        margin-right: 15px;
+        margin-left: 0;
+        margin-bottom: -45%;
+        width: 40px;
+      }
+
+        .mainImgMsgTitle1 {
+        color: $white;
+        text-align: left;
+        font-size: 15px;
+        font-weight: bold;
+        }
+
+        .mainImgMsgTitle2 {
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+        .mainImgMsgTitle22 {
+          color: $brand-color-selected;
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+
+        .mainImgMsgTitle1Zh {
+          color: $black;
+          text-align: left;
+          font-size: 18px;
+        }
+
+        .mainImgMsgTitle2Zh {
+          font-size: 28px;
+        }
+
+        .mainImgMsgTitle22Zh {
+           color: $brand-color-selected;
+           font-size: 28px;
+        }
+
+        .spaceH {
+          padding-top: 60px;
+          padding-bottom: 0px;
+          padding-left: 15%;
+          padding-right:10%;
+        }
+
+        .mainImgCalc {
+          margin-top: -5px;
+          margin-bottom: -150px;
+          margin-left:0px;
+        }
+
+
+        .calcJumbotron {
+          width: 100%;
+          padding-top: 8px;
+          padding-bottom: 30px;
+        }
+
+        .calcJumbotronDiv {
+          padding-left: 50px;
+          padding-right: 30px;
+          padding-top: 10px;
+        }
+
+        .calcMsgTitle {
+          padding-left: 0;
+          margin-top: 0;
+          margin-bottom: 0px;
+        }
+
+        .calcMsgTitleH2 {
+          color: $brand-color;
+          font-size: 25px;
+        }
+
+        .calcMsgDesc {
+          padding-left: 0;
+          margin-bottom: 0;
+        }
+
+        .calcMsgDesc p {
+        color: $brand-color;
+        font-size: 10px;
+        }
+
+        .calcMarginBottom {
+          margin-bottom: 5px;
+        }
+
+        .calcLabelLocation {
+          font-size: 14px;
+          font-weight: bold;
+          margin-top:8px;
+          width:110px;
+        }
+
+        .calcLabelTerm {
+          font-size: 14px;
+          font-weight: bold;
+          margin-top:8px;
+          //width:112px;
+        }
+
+        .calcLabelCarType {
+          font-size: 14px;
+          font-weight: bold;
+          margin-top:8px;
+          //width:108px;
+        }
+
+        .calcLabelDL {
+          font-size: 14px;
+          font-weight: bold;
+          margin-top:8px;
+          //width:138px;
+        }
+
+        .calcMsg {
+          text-align: left;
+          width: 100%;
+          margin-top: 5px;
+        }
+
+        .calcMsg p {
+          font-size: 9px;
+          margin-bottom: 0;
+          text-align: justify;
+        }
+
+        .calcHr {
+          margin-top: 5px;
+          margin-bottom: 10px;
+        }
+
+
+        .calcFieldLocation {
+        font-size: 14px;
+        background-color: $white;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        border-radius:7px;
+        //margin-left:-16px;
+        //width: 168px;
+        text-align:center;
+        }
+
+        .calcFieldTerm {
+          font-size: 14px;
+          background-color: $white;
+          padding-left: 0px;
+          padding-right: 0px;
+          padding-top: 0px;
+          padding-bottom: 0px;
+          border-radius:7px;
+          //margin-left:-8px;
+          //width: 158px;
+        }
+
+        .calcFieldCarType {
+          font-size: 14px;
+          background-color: $white;
+          padding-left: 0px;
+          padding-right: 0px;
+          padding-top: 0px;
+          padding-bottom: 0px;
+          border-radius:7px;
+          //margin-left:-15px;
+          //width: 169px;
+        }
+
+        .calcFieldDL {
+          font-size: 14px;
+          background-color: $white;
+          padding-left: 0px;
+          padding-right: 0px;
+          padding-top:0px;
+          padding-bottom:0px;
+          border-radius:7px;
+          //margin-left:-11px;
+          //width: 135px;
+        }
+
+}
+.dropdown-menu{
+  min-width: 100%;
+  text-align: center;
+}
+.dropdown-menu > li > a{
+  margin-left: -5px;
+}

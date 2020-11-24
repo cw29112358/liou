@@ -1,0 +1,71 @@
+@import '~scss_vars';
+
+.m-t {
+  margin-top: 18%;
+  text-align: left;
+
+  .form-control {
+    margin: 20px 0;
+    border-width: 0 0 1px 0;
+    background-color: $white;
+  }
+  .label {
+    text-align: left;
+    color: $text-gray;
+    width: 100%;
+    font-size: 18px;
+  }
+  .form-field {
+    .control-label {
+      padding-left: 12px;
+    }
+    .text-danger {
+      padding-left: 12px;
+    }
+  }
+  .color {
+    color: $brand-color;
+  }
+  .btn-primary {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 100%;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 19px;
+    background-color: $button-green;
+    &:hover {
+      background-color: $brand-color;
+    }
+  }
+  .render-checkbox {
+    label {
+      display: flex;
+      input {
+        flex: 0 0 15px;
+        min-height: 15px;
+        margin-right: 10px;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    .form-group {
+      margin-bottom: 5px;
+    }
+  }
+  @media (max-width: 620px) {
+    .btn-primary {
+      margin-top: 10px;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: 620px) {
+    .btn-primary {
+      margin-top: 30px;
+      margin-bottom: 40px;
+      font-size: 19px;
+    }
+  }
+}

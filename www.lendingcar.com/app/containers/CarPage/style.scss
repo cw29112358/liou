@@ -1,0 +1,41 @@
+@import '~scss_vars';
+
+#intercom-container {
+  display: none;
+}
+
+.car-page {
+  .car-div {
+    opacity: 0.8;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+  }
+  .car-detail-div {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+  }
+  .path-bar {
+    text-align: center;
+    margin: 20px auto;
+    width: 100%;
+  }
+
+  @media (max-width: 620px) {
+    .car-div {
+      padding-top: 17%;
+      padding-bottom: 17%;
+    }
+    .car-detail-div {
+      padding: 0 10px;
+    }
+  }
+  @media (min-width: 620px) {
+    .car-div {
+      padding-top: 50px;
+      padding-bottom: 8%;
+    }
+  }
+
+}

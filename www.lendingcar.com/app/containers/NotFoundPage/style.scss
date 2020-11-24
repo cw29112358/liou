@@ -1,0 +1,22 @@
+@import '~scss_vars';
+
+.notFoundBackground {
+  background: $background-white3;
+  .nf-img {
+    width: 246px;
+    height: 202px;
+  }
+  p {
+    margin: 0;
+  }
+  .nf-status {
+    margin-top: 30px;
+    line-height: 62px;
+    color: $text-blue-dark;
+  }
+  .nf-tips {
+    font-size: 22px;
+    line-height: 48px;
+    color: $text-gray4;
+  }
+}

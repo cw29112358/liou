@@ -1,0 +1,44 @@
+@import '~scss_vars';
+
+.form-component {
+  .m-t {
+    text-align: left;
+    margin: auto;
+    width: 100%;
+  }
+  .form-group[name="gender"] {
+    padding: 0 15px;
+    margin: 12px 0;
+  }
+  * {
+    .control-label {
+      padding-left: 12px;
+    }
+  }
+  .form-control {
+    margin: 0;
+    border-width: 1px;
+  }
+
+  .fileinput {
+    display: block;
+    margin-bottom: 0;
+    .btn-file {
+      padding: 0 10px !important;
+    }
+  }
+  .form-field {
+    padding: 0 15px;
+  }
+  .btn-primary {
+    width: 150px;
+  }
+
+  @media (max-width: 991px) {
+    .form-group {
+      > div:not(:first-child) {
+        margin-top: 5px;
+      }
+    }
+  }
+}

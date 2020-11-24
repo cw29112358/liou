@@ -1,0 +1,74 @@
+@import '~scss_vars';
+
+.car-carousel {
+  .img-carousel {
+    margin-bottom: 8%;
+    height: 580px;
+  }
+  .carousel-control.right {
+    background: transparent;
+  }
+  .carousel-control.left {
+    background: transparent;
+  }
+  .carousel-inner {
+    background-color: $white;
+    min-width: 320px;
+  }
+
+  .model {
+    color: $text-gray;
+    margin-bottom: 0;
+    font-size: 28px;
+  }
+  .price {
+    color: $text-gray;
+    margin-bottom: 0;
+    font-size: 24px;
+  }
+  .description {
+    background-color: $white;
+    border-radius: 60px;
+    margin: auto;
+    text-align: center;
+    width: 345px;
+    padding: 10px 20px;
+  }
+  .div {
+    text-align: center;
+    margin: auto;
+    position: sticky;
+    width: 100%;
+    bottom: 24%;
+  }
+
+  .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+    top: 35%;
+  }
+
+  @media (max-width: 700px){
+    .model {
+      font-size: 18px;
+    }
+    .price {
+      font-size: 14px;
+    }
+    .description {
+      width: 200px;
+      padding: 5px 10px;
+    }
+  }
+
+  @media (min-width: 700px) and (max-width: 1200px) {
+    .model {
+      font-size: 24px;
+    }
+    .price {
+      font-size: 20px;
+    }
+    .description {
+      width: 250px;
+      padding: 5px 10px;
+    }
+  }
+}

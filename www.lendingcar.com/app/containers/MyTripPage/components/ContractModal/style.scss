@@ -1,0 +1,19 @@
+@import "~scss_vars";
+
+.contract-modal {
+  z-index: 9999;
+
+  .modal-dialog {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .modal-content {
+    background-color: $background-gray3;
+  }
+  .modal-header {
+    border-bottom: 0;
+  }
+  .modal-body {
+
+  }
+}

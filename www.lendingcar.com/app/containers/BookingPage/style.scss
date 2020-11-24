@@ -1,0 +1,370 @@
+  @import '~scss_vars';
+
+  #intercom-container {
+    display: none;
+  }
+
+  .policy-line {
+    margin-top: 10px;
+  }
+  .ant-modal-wrap {
+    position: absolute;
+    top: 100px;
+    height: 80%;
+  }
+  .ant-modal {
+    top: 0;
+    height: 90%;
+  }
+  .ant-modal-content {
+  }
+  .ant-modal-body {
+    padding: 24px 20px;
+  }
+  .ant-modal-footer {
+      position: sticky;
+      bottom: 0px;
+      background-color: $white;
+      border: 0;
+      div {
+        display: flex;
+        // flex-direction: row-reverse;
+        justify-content: space-around;
+        width: 100%;
+      }
+      .ant-btn {
+        background-color: $border-white-blue;
+        border-color: $border-white-blue;
+        color: $text-gray6;
+      }
+      .ant-btn-primary {
+        background-color: $brand-color;
+        border-color: $brand-color;
+        color: $white;
+      }
+  }
+  .ant-modal-header {
+    position: sticky;
+    top: 0;
+    border: 0;
+    text-align: center;
+  }
+  .ant-modal-close {
+    position: fixed;
+    display: none;
+  }
+
+  @media (max-width: 768px){
+    .ant-modal-footer .ant-btn {
+      width: 50%;
+      white-space:normal;
+      min-height: 32px;
+      height: auto;
+    }
+  }
+
+.booking-background {
+  @media (min-height: 1200px) {
+    height: 100vh;
+  }
+  background-color: $background-gray3;
+  .booking-container {
+    padding: 70px 10px;
+  }
+  .form-container {
+    margin-top: 20px;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .operation-form {
+    background-color: $white;
+    padding-left: 0;
+    width: 750px;
+    border: 1px solid $border-gray-dark;
+    .form-div-height {
+      height: 100%;
+    }
+  }
+
+  .reservation-price {
+    background-color: $white;
+    padding: 20px 15px;
+    border: 1px solid $border-gray-dark;
+    .car-title {
+      margin-top: 18px;
+      margin-bottom: 13px;
+      font-size: 22px;
+      letter-spacing: 0;
+    }
+    .margin-b-40 {
+      margin-bottom: 40px;
+    }
+    .default-car-image {
+      width: 100%;
+    }
+  }
+
+  .btn-brand {
+    background-color: $brand-color;
+    color: $white;
+  }
+
+  @media (max-width: 767px){
+    .logo-img{
+      width: 10%;
+      height: 10%;
+    }
+    .confirm-form{
+      &>button{
+        display: inline-block;
+        margin-bottom: 10px;
+        margin-right: 0 !important;
+        width: 90%;
+      }
+      .confirm-form-div-input{
+        width: 90%;
+        margin:0 auto;
+      }
+      input{
+        margin-bottom: 10px;
+        min-height: 38px;
+      }
+    }
+
+    .form-container {
+      flex-wrap: wrap;
+    }
+
+    .operation-form {
+      width: 100%;
+      border: 1px solid $border-gray-dark;
+      .form-div-height {
+        height: 100%;
+      }
+    }
+    .margin-b-40 {
+      display: none;
+    }
+    .reservation-price {
+      // margin-top: 20px;
+      // width: 100%;
+      // margin-bottom: 40px;
+      display: none;
+    }
+    .arrow-right {
+      width: 20%;
+      height: 20%;
+    }
+
+  }
+
+  @media screen and (min-width: 1050px) {
+    .reservation-price {
+      .area-return {
+        margin-left: 100px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1200px){
+    .reservation-price {
+      .margin-b-40 {
+        margin-bottom: 28px;
+      }
+      .pull-left, .pull-right {
+        font-size: 12px;
+      }
+    }
+    .booking-detail{
+      padding: 0;
+      border: none;
+      .pick-return-area {
+        flex-direction: column;
+        span {
+          display: inline-block;
+          margin-bottom: 3px;
+          font-size: 16px;
+          line-height: 22px;
+          color: $text-black;
+        }
+      }
+      .area-pick-up {
+        margin-bottom: 16px;
+      }
+      .area-return {
+        margin-bottom: 32px;
+        margin-left: 0;
+      }
+    }
+    .logo-img{
+      width: 10%;
+      height: 10%;
+    }
+    .confirm-form{
+      &>div{
+        display: inline-block;
+      }
+      &>button{
+        display: inline-block;
+        margin-bottom: 0px;
+      }
+      .confirm-form-div-input{
+        margin-right: 35px;
+        width: auto;
+      }
+      input{
+        min-height: 38px;
+      }
+    }
+    .operation-form {
+      margin-right: 20px;
+    }
+  }
+  @media (min-width: 1200px) {
+    //carDetail
+    .margin-l-35{
+      margin-left: 35px;
+    }
+    //Bookingform driveType部分的样式
+    .booking-form-driver-type{
+      overflow: hidden;
+      &>div{
+        float: left;
+        &:first-child{
+          width: 43.5%;
+          margin-right: 10px;
+        }
+        &:last-child{
+          width: 57%;
+        }
+      }
+      .driver-type{
+        margin-right: 10px;
+      }
+    }
+    //预付款container
+    .review-container{
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    //预付款form
+    // .form-container{
+    //   margin-left: 35px;
+    // }
+    //确认页form
+    .confirm-form{
+      &>div{
+        display: inline-block;
+      }
+      &>button{
+        margin-bottom: 0;
+      }
+      .confirm-form-div-input{
+        margin-right: 35px;
+      }
+      input{
+        min-height: 38px;
+      }
+    }
+    //radio自适应
+    .unit-style{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .logo-img{
+      width: 10%;
+      height: 10%;
+    }
+  }
+
+  div.error {
+    height: 0;
+  }
+  .form-group{
+    margin-bottom: 25px;
+  }
+  // mobile页面下各模块的style
+  .mobile-title-div{
+    height: 25px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    background: rgb(199, 202, 205);
+    border: 1px solid rgb(180, 180, 181);
+    font-size: 10px;
+    line-height:20px;
+  }
+  .hidden{
+    display: none;
+  }
+  .margin-t-10{
+    margin-top: 10px;
+  }
+  .margin-t-25{
+    margin-top: 25px;
+  }
+  .m-booking-form-footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 55px;
+    padding: 0 15px;
+    z-index: 1000;
+    background: rgb(255,255,255);
+    border-top: 1px solid $border-white-blue2;
+  }
+  .m-total {
+    font-size: 20px;
+    letter-spacing: 0;
+  }
+  .m-button {
+    background-color: $brand-color;
+    color: #fff;
+    border-radius: 3px;
+  }
+  .m-title-booking-form {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 100%;
+    padding: 10px 10px;
+  }
+  .m-car-img {
+    width: 160px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .default-car-image {
+    width: 160px;
+  }
+  .m-car-title {
+    font-size: 18px;
+    flex: 1;
+    .font-bold {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+  }
+  .m-note-info {
+    position: fixed;
+    left: 0;
+    bottom: 40px;
+    border-top: 1px solid $border-white-blue2;
+    border-bottom: 1px solid $border-white-blue2;
+    padding: 10px 15px;
+    background-color: $background-white3;
+  }
+  .m-subscription-price {
+    color: $brand-color;
+  }
+}

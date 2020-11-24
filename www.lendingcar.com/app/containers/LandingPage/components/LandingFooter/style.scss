@@ -1,0 +1,53 @@
+@import '~scss_vars';
+
+.landing-footer {
+  .footer-line {
+    text-align: center;
+    margin: auto;
+    max-width: 1030px;
+  }
+  .title-color {
+    color: $text-gray3;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  .link-text {
+    text-align: left;
+    font-size: 14px;
+    margin: 10px 0px;
+  }
+  .link-color {
+    color: $text-gray3;
+  }
+  .div {
+    min-width: 120px;
+    text-align: center;
+    margin: 10px;
+  }
+  .mobile-footer {
+    text-align: center;
+    margin: auto;
+    padding: 20px 10%;
+  }
+  .ant-row-flex-space-between {
+    align-items: center;
+  }
+  @media (min-width: 700px) and (max-width: 1200px) {
+    .title-color {
+      font-size: 28px;
+    }
+    .link-text {
+      font-size: 15px;
+    }
+  }
+  @media (max-width: 700px) {
+    .title-color {
+      font-size: 24px;
+    }
+    .link-text {
+      font-size: 11px;
+    }
+  }
+}

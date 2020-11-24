@@ -1,0 +1,77 @@
+@import '~scss_vars';
+
+.booking-steps {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+
+  .step {
+    height: 54px;
+    line-height: 54px;
+    width: 33.33%;
+    color: $black;
+    background-color: transparent;
+  }
+  .step .body {
+    background-color: $white;
+  }
+  .step .tail {
+    border-color: $white $white $white transparent;
+  }
+  .step:first-child .tail {
+    border-color: $white $white $white $white;
+  }
+  .step .head {
+    border-color: transparent transparent transparent $white;
+  }
+
+  .step-active {
+    color: $white;
+    border-color: $brand-color;
+  }
+  .step-active .body {
+    background-color: $brand-color;
+  }
+  .step-active .tail {
+    border-color: $brand-color transparent;
+  }
+  .step-active:first-child .tail {
+    border-color: $brand-color $brand-color $brand-color $brand-color;
+  }
+  .step-active .head {
+    border-color: transparent transparent transparent $brand-color;
+  }
+
+  .step-sleep {
+    color: $white;
+  }
+  .step-sleep .body{
+    background-color: $background-green4;
+  }
+  .step-sleep .tail {
+    border-color: $background-green4 $background-green4 $background-green4 transparent;
+  }
+  .step-sleep:first-child .tail {
+    border-color: $background-green4 $background-green4 $background-green4 $background-green4;
+  }
+  .step-sleep .head {
+    border-color: transparent transparent transparent $background-green4;
+  }
+
+  .tail {
+    background-color: transparent;
+    float: left;
+    border-width: 27px 0px 27px 10px;
+    border-style: solid;
+  }
+  .body {
+    height: 54px;
+    overflow: hidden;
+  }
+  .head {
+    background-color: transparent;
+    float: right;
+    border-width: 27px 0px 27px 10px;
+    border-style: solid;
+  }
+}

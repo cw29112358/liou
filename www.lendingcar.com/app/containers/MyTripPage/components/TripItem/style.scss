@@ -1,0 +1,200 @@
+@import '~scss_vars';
+
+.trip-info-box {
+  overflow: hidden;
+  &:hover {
+    cursor: pointer;
+  }
+
+  .booking-time {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 40px;
+    padding-left: 20px;
+    font-size: 16px;
+    background-color: $background-gray-green;
+  }
+  .booking-state {
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 2px;
+    border: 1px solid;
+    padding: 0 10px;
+    height: 22px;
+    min-width: 64px;
+    font-size: 12px;
+    line-height: 22px;
+    &-pending {
+      color: $text-yellow;
+    }
+    &-leasing {
+      color: $text-green-brand;
+    }
+    &-canceled {
+      color: $text-gray5;
+    }
+    &-returned {
+      color: $text-blue;
+    }
+  }
+
+  .trip-detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    div {
+      box-sizing: border-box;
+    }
+  }
+
+  .img {
+    flex: 0 0 150px;
+    * {
+      width: 100%;
+    }
+  }
+
+  %text-nowrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .detail {
+    flex: 1;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-right: 1px solid $border-gray;
+    min-width: 110px;
+    font-size: 18px;
+    line-height: 18px;
+    color: $text-blue-dark;
+    p {
+      margin: 0;
+    }
+    .brand {
+      font-weight: 400;
+      @extend %text-nowrap;
+    }
+    .year {
+      font-weight: 400;
+      margin-top: 10px;
+    }
+  }
+
+  .trip-time {
+    min-width: 155px;
+    padding-left: 20px;
+    padding-top: 20px;
+    .title {
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 400;
+      color: $text-gray4;
+      @extend %text-nowrap;
+    }
+    .time {
+      display: flex;
+      align-items: baseline;
+      margin-top: 15px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1;
+      color: $text-blue-dark;
+      @extend %text-nowrap;
+    }
+  }
+  .trip-time-end {
+    padding-left: 10px;
+  }
+  .trip-arrow-right {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+
+  @media (max-width: 1200px) {
+
+  }
+
+  @media (max-width:992px) {
+    .trip-detail {
+      padding: 12px;
+    }
+
+    .detail {
+      padding-left: 10px;
+    }
+
+    .trip-time {
+      padding-left: 13px;
+    }
+
+  }
+
+  @media (max-width:768px) {
+    .booking-time {
+      font-size: 13px;
+      height: 34px;
+    }
+    .booking-state {
+      height: 20px;
+      line-height: 20px;
+    }
+
+    .trip-detail {
+      padding: 8px;
+      height: 76px;
+      justify-content: flex-start;
+    }
+
+    .img {
+      flex: 0 0 100px;
+      height: 60px;
+    }
+
+    .detail {
+      padding-left: 8px;
+      padding-top: 10px;
+      font-size: 12px;
+    }
+
+    .trip-time {
+      padding-left: 8px;
+      padding-top: 10px;
+      min-width: 110px;
+      .title,
+      .time {
+        font-size: 12px;
+      }
+    }
+    .trip-arrow-right {
+      padding-top: 20px;
+      margin-left: 0;
+      margin-right: 10px;
+    }
+  }
+
+  @media (max-width:600px) {
+    .trip-arrow-right {
+      display: none;
+    }
+  }
+
+  @media (max-width:480px) {
+    .booking-time {
+      padding-left: 10px;
+    }
+
+    .detail {
+      border-right: 0;
+      padding-left: 10px;
+    }
+
+    .trip-time {
+      display: none;
+    }
+  }
+
+}

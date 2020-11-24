@@ -1,0 +1,33 @@
+@import '~scss_vars';
+
+.head-liner {
+  text-align: center;
+  margin: 72px auto auto;
+  .congratulation {
+    font-size: 28px;
+    color: $text-blue-dark;
+    line-height: 28px;
+  }
+  .margin-b {
+    text-align: center;
+     .reservation-success {
+        font-size: 18px;
+        color: $text-blue-dark;
+        line-height: 24px;
+     }
+   }
+   @media (max-width: 768px) {
+     img {
+       width: 30%;
+     }
+     .congratulation {
+       font-size: 18px;
+     }
+     .margin-b {
+       text-align: center;
+        .reservation-success {
+           font-size: 14px;
+        }
+   }
+ }
+}

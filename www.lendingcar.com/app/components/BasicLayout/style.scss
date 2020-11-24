@@ -1,0 +1,47 @@
+@import '~scss_vars';
+
+.layout-page {
+  .page-container {
+    padding-bottom: 0;
+  }
+  .left-div {
+    border: 1px solid $border-white-blue2;
+    width: 22%;
+    padding: 20px 0;
+    background-color: $white;
+  }
+  .form-div {
+    border: 1px solid $border-white-blue2;
+    width: 76%;
+    min-height: 700px;
+    background-color: $white;
+  }
+
+  @media (max-width: 1200px)  {
+    .left-div {
+      width: 100%;
+      min-height: 45px;
+      padding: 0;
+    }
+    .form-div {
+      margin-left: 0;
+      margin-top: 20px;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    min-width: 300px;
+
+    .path-bar {
+      display: none;
+    }
+    .left-div {
+      display: none;
+    }
+    .form-div {
+      margin-top: 0;
+      min-width: 300px;
+    }
+  }
+}

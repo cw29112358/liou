@@ -1,0 +1,13 @@
+// import * as commonColor from 'commonColor';
+import { objectMerge } from 'utils/helpers';
+import formStyles from 'forms/styles';
+
+export default {
+  ...objectMerge(formStyles,
+    {
+      button: {
+        marginTop: 20,
+        marginHorizontal: 15,
+      },
+    }),
+};

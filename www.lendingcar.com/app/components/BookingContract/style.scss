@@ -1,0 +1,244 @@
+@import '~scss_vars';
+
+#booking-contract {
+  .print-header {
+    display: none;
+  }
+
+  .header {
+    width: 100%;
+    height: 50px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: flex-end;
+    button {
+      background-color: $background-gray3;
+      color: $brand-color;
+      height: 35px;
+      line-height: 35px;
+      font-size: 14px;
+      border-radius: 30px;
+    }
+  }
+
+  .contract-info-div {
+    margin: auto;
+    text-align: center;
+    background-color: #FFF;
+    padding-top: 68px;
+    margin-bottom: 36px;
+    .info-line {
+      display: flex;
+      justify-content: flex-start;
+    }
+    .info-description {
+      font-size: 16px;
+      color: #000;
+    }
+    .info-key {
+      text-align: left;
+      min-width: 140px;
+    }
+    .info-value {
+      text-align: left;
+    }
+
+    .info-head-div {
+      text-align: center;
+      font-size: 26px;
+      padding-top: 0;
+      .car-img {
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        img {
+          width: 100%;
+        }
+      }
+      .booking-number {
+        font-size: 18px;
+        color: #999;
+        margin-top: 26px;
+      }
+    }
+    .rental-info-block {
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 46px;
+    }
+    .handover-div {
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+      padding-top: 46px;
+      border-top: 1px dashed #DEE3E6;
+    }
+    .detail-info-rental {
+      text-align: left;
+      width: 30%;
+      min-width: 310px;
+      .detail-info-title {
+        font-size: 16px;
+        color: #3e435b;
+      }
+    }
+  }
+  .contract-title-div {
+    position: relative;
+    z-index: 100;
+    width: 248px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    position: sticky;
+    margin-bottom: -24px;
+    background-color: $brand-color;
+    .contract-title {
+      // background-color: red;
+      line-height: 45px;
+      color: $white;
+    }
+  }
+
+  .contract-arrow {
+    display: flex;
+    align-items: center;
+  }
+
+  .font-title {
+    font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    .contract-info-div {
+      .header {
+        display: flex;
+        justify-content: center;
+      }
+      .info-description {
+        font-size: 12px;
+      }
+
+      .info-head-div {
+        .car-img {
+          width: 160px;
+        }
+        .booking-number {
+        }
+      }
+      .rental-info-block {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .handover-div {
+        justify-content: space-between;
+      }
+      .row-contract {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .detail-info-rental {
+        width: 30%;
+        .detail-info-title {
+          font-size: 12px;
+        }
+      }
+    }
+    .contract-arrow {
+      justify-content: center;
+      img {
+        width: 50%;
+      }
+    }
+    .contract-title-div {
+      width: 180px;
+      height: 40px;
+      margin-bottom: -20px;
+      .contract-title {
+        line-height: 40px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media print{
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  body {
+    max-height: 8.5in;
+  }
+  body > div {
+    display: none;
+  }
+  body > div#print-area {
+    display: block;
+  }
+  .no-print {
+    display: none;
+  }
+  #booking-contract {
+    .contract-info-div {
+      .detail-info-rental {
+        width: 6.3cm;
+        margin-left: 1cm;
+        .detail-info-title {
+          font-size: 10pt;
+        }
+        .info-description {
+          font-size: 8pt;
+        }
+      }
+    }
+
+    .contract-title-div {
+      .contract-title {
+        font-size: 12pt;
+      }
+    }
+
+    .print-header {
+      display: block;
+      width: 100%;
+      height: 10cm;
+      margin: 0px auto;
+      padding: 0.5in 0;
+      img.logo {
+        width: 5cm;
+        margin: 1cm;
+        display: block;
+      }
+      .car-info {
+        height: 8cm;
+        margin: 1cm;
+        .car-img {
+          width: 6cm;
+          height: 4.5cm;
+          margin: .5cm;
+          float: left;
+        }
+        .car-info-text {
+          float: left;
+        }
+        .info-description {
+          margin-top: 1cm;
+          font-size: 15pt;
+        }
+      }
+    }
+    .header {
+      display: none;
+    }
+    p {
+      page-break-inside: avoid;
+    }
+  }
+}

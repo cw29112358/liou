@@ -1,0 +1,38 @@
+@import '~scss_vars';
+
+.form-div-height {
+  .button-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 35px 30px 0;
+    border-top: 1px solid $border-white-blue;
+    // margin-top: 128px;
+  }
+  .button {
+    background-color: $brand-color;
+    color: $white;
+    border-radius: 3px;
+    font-size: 18px;
+  }
+  .form-title {
+    margin-bottom:20px;
+    padding-left: 20px;
+    margin-top: 25px;
+    border-left: 4px solid $brand-color;
+  }
+  .note-button {
+    font-size: 18px;
+    color: $brand-color;
+    letter-spacing: 0;
+  }
+  .note-info {
+    padding: 0 30px;
+    font-size: 12px;
+    color: $gray-dark3;
+    margin-top: 24px;
+  }
+  .subscription-price {
+    color: $brand-color;
+  }  
+}

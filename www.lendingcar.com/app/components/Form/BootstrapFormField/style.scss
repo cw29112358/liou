@@ -1,0 +1,104 @@
+@import '~scss_vars';
+.row {
+  text-align: left;
+  // reset
+  .control-label {
+    font-size: 14px;
+    color: $text-blue-dark;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    color: #000;
+  }
+  input[type="button|submit|reset"],
+  select {
+    -webkit-appearance: none;
+  }
+  .hEBgc {
+    height: 0;
+  }
+  // radio checkbox
+  .checkbox-inline,
+  .radio-inline {
+    margin-right: 50px;
+    margin-left: 0;
+    font-size: 18px;
+    line-height: 28px;
+    height: 28px;
+    font-size: 14px;
+    color: $text-blue-dark;
+    input[type = radio],
+    input[type = checkbox] {
+      margin-top: 0;
+      height: 28px;
+    }
+  }
+  .checkbox-inline,
+  .radio-inline {
+    padding-left: 0;
+  }
+  input[type="radio"] {
+      display: none;
+  }
+  input[type="radio"] + span::before {
+    content: "\a0";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: .4em;
+    border-radius: 50%;
+    border: 1px solid $gray-light;
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+    line-height: 1;
+    text-indent: .15em;
+  }
+  input[type="radio"]:checked + span::before {
+    background-color: $brand-color;
+    background-clip: content-box;
+    padding: .2em;
+  }
+
+  //
+  input,
+  textarea,
+  .form-control {
+    border-radius: 4px;
+    height: 45px;
+  }
+  .form-group {
+    margin: 0 !important;
+  }
+
+  div.error {
+    height: 17px;
+    span{
+      font-size: 10px;
+    }
+  }
+
+  .btn-file {
+    background-color: $white;
+    overflow: hidden;
+    text-align: left;
+  }
+
+  .img-circle {
+    min-width: 100px;
+    min-height: 100px;
+  }
+
+  @media (min-width: 991px) {
+    .img-circle {
+      width: 40%;
+      height: 40%;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .img-circle {
+      width: 25%;
+      height: 25%;
+    }
+  }
+}

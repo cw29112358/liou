@@ -1,0 +1,175 @@
+@import '~scss_vars';
+
+.navbar-page {
+  .navbar-default {
+    position: absolute;
+    z-index: 1000;
+    border-bottom: 0;
+    width: 100%;
+    background-color: transparent;
+  }
+  .navbar-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-logo img {
+    zoom: 1.2;
+  }
+
+  .navbar-nav > li {
+    height: 50px;
+    line-height: 50px;
+  }
+  .navbar-default .navbar-nav > li > a {
+    width: 100px;
+    text-align: center;
+    color: $black2 !important;
+    &:focus,
+    &:hover {
+      color: $gray-dark1 !important;
+    }
+  }
+
+  .dropdown-menu {
+    min-width: 0;
+    text-align: center;
+    >li>a {
+      padding: 9px 20px;
+    }
+  }
+  .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    background-color: transparent;
+    color: #26bbad;
+  }
+  .dropdown-header {
+    padding-top: 10px;
+    opacity: 0.7;
+  }
+  .dropdown-logo {
+    padding: 10px 20px 10px;
+    background-color: transparent;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: transparent;
+    }
+  }
+
+  %navbar-brand-mobile {
+    width: 50px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .navbar-back {
+    display: none;
+    position: absolute;
+    left: -15px;
+    color: $brand-color;
+    @extend %navbar-brand-mobile;
+  }
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    right: -15px;
+    @extend %navbar-brand-mobile;
+    padding: 15px;
+    color: $brand-color;
+    background-color: transparent !important;
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      @extend .mobile-menu
+    }
+    .fa-bars {
+      font-size: 20px;
+    }
+  }
+
+  .navbar-mobile {
+    border-radius: 0;
+    &.navbar-default {
+      padding: 0;
+    }
+    .navbar-header {
+      display: block;
+      float: none;
+    }
+    .navbar-back {
+      display: block;
+    }
+    .mobile-menu {
+      display: block;
+    }
+    .navbar-logo {
+      position: absolute;
+      left: 50%;
+      top: 4px;
+      transform: translateX(-50%);
+      img {
+        zoom: 0.9;
+      }
+    }
+
+    .navbar-toggle {
+      display: none;
+    }
+
+    .navbar-collapse{
+      display: none !important;
+    }
+  }
+
+  .navbar-fixed {
+    position: fixed;
+    background: $white;
+    animation: navbar-fixed 1s ease-in-out;
+    -webkit-animation: navbar-fixed 1s ease-in-out;
+    box-shadow: 0 0.01rem 0.02rem 0 $special-black-transparent;
+    .navbar-collapse {
+      border-bottom: 0;
+    }
+
+  }
+  @keyframes navbar-fixed {
+      0% {
+        filter: opacity(0);
+        opacity: 0;
+      }
+      100% {
+        filter: opacity(100);
+        opacity: 1;
+      }
+    }
+
+  .is-landing {
+    .mobile-menu {
+      color: white;
+    }
+
+    &.navbar-fixed {
+      .mobile-menu {
+        color: $brand-color;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .navbar-header {
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .navbar-brand {
+      margin-left: 0;
+    }
+    .navbar-collapse {
+      background-color: $white;
+      overflow-y: visible;
+      border-bottom: 1px solid $border-gray-light;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+}
